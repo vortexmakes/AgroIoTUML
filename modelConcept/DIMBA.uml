@@ -400,9 +400,17 @@
           </effect>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_5tMNEFRTEeiBd_DXg33BBQ" source="_ohc50FRTEeiBd_DXg33BBQ" target="_uCMlkFRTEeiBd_DXg33BBQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_QgX_kGkREei8ZKFXxFpEyg">
+            <language>C</language>
+            <body>open();</body>
+          </effect>
           <trigger xmi:type="uml:Trigger" xmi:id="_IIh1QFRUEeiBd_DXg33BBQ" event="_KXEO4FLfEei-ps2IrsePSA"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_7fUSAFRTEeiBd_DXg33BBQ" source="_uCMlkFRTEeiBd_DXg33BBQ" target="_ohc50FRTEeiBd_DXg33BBQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_TjH-4GkREei8ZKFXxFpEyg">
+            <language>C</language>
+            <body>close();</body>
+          </effect>
           <trigger xmi:type="uml:Trigger" xmi:id="_KR9m8FRUEeiBd_DXg33BBQ" event="_rO3LUFLfEei-ps2IrsePSA"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_3hl8IGYCEeiSsKUmuCYmrw" source="_uCMlkFRTEeiBd_DXg33BBQ" target="_ohc50FRTEeiBd_DXg33BBQ"/>
