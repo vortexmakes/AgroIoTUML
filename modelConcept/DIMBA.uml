@@ -310,28 +310,12 @@
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_oNrhEGWdEeiax4a4nV9STA" name="evRecvFail" signal="_oG6xwGWdEeiax4a4nV9STA"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_PCBpkGWgEeiax4a4nV9STA" name="evSentFail"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_PJlDEGWgEeiax4a4nV9STA" name="evSentFail" signal="_PCBpkGWgEeiax4a4nV9STA"/>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_0iYskGWgEeiax4a4nV9STA" name="evSent">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_EcnKQGXFEeiax4a4nV9STA" name="buf">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_GI4e0GXFEeiax4a4nV9STA" name="size">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-        </ownedAttribute>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_0iYskGWgEeiax4a4nV9STA" name="evSent"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_0oZN8GWgEeiax4a4nV9STA" name="evSent" signal="_0iYskGWgEeiax4a4nV9STA"/>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_K4x_cGWkEeiax4a4nV9STA" name="evActivate"/>
-      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_LA2WUGWkEeiax4a4nV9STA" name="evActivate" signal="_K4x_cGWkEeiax4a4nV9STA"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_LA2WUGWkEeiax4a4nV9STA" name="evActivate" signal="_5aSgkGWpEeiax4a4nV9STA"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_SbF6UGWkEeiax4a4nV9STA" name="evDeactivate"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_SncUQGWkEeiax4a4nV9STA" name="evDeactivate" signal="_SbF6UGWkEeiax4a4nV9STA"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_5aSgkGWpEeiax4a4nV9STA" name="evActivate"/>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_-RU3QGXFEeiax4a4nV9STA" name="evRecv">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_-RU3QWXFEeiax4a4nV9STA" name="buf">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_-RU3QmXFEeiax4a4nV9STA" name="size">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="_mZlwoGXGEeiax4a4nV9STA" name="evSend">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mZlwoWXGEeiax4a4nV9STA" name="buf">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
@@ -345,19 +329,16 @@
           <expr xmi:type="uml:LiteralString" xmi:id="_KFoBcmeXEeirvJGe6Bk8FQ" value="WAIT_CONNECT_TIME"/>
         </when>
       </packagedElement>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_8wz7IGQiEeietdcvou649g" name="evSend">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_K2QjIGQ0Eeietdcvou649g" name="data"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_9EpdIGQiEeietdcvou649g" name="evSend" signal="_8wz7IGQiEeietdcvou649g"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_9EpdIGQiEeietdcvou649g" name="evSend" signal="_mZlwoGXGEeiax4a4nV9STA"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_rr0eMGQkEeietdcvou649g" name="evReceivePollingTout"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_rz7RUGQkEeietdcvou649g" name="evReceivePollingTout" signal="_rr0eMGQkEeietdcvou649g"/>
-      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_r72OoGUeEeiPR9LHmvLjHw" name="evTimeout" isRelative="true">
+      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_r72OoGUeEeiPR9LHmvLjHw" name="CONFIG_TRY_DELAY" isRelative="true">
         <when xmi:type="uml:TimeExpression" xmi:id="_r72OoWUeEeiPR9LHmvLjHw" name="CONFIG_TRY_DELAY">
           <expr xmi:type="uml:LiteralString" xmi:id="_r72OomUeEeiPR9LHmvLjHw" name="CONFIG_TRY_DELAY" value="CONFIG_TRY_DELAY"/>
         </when>
       </packagedElement>
-      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_lHFSoGWUEeivSvTH1LqtnQ" name="evTimeout" isRelative="true">
-        <when xmi:type="uml:TimeExpression" xmi:id="_lHFSoWWUEeivSvTH1LqtnQ">
+      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_lHFSoGWUEeivSvTH1LqtnQ" name="REGISTRATION_TIME" isRelative="true">
+        <when xmi:type="uml:TimeExpression" xmi:id="_lHFSoWWUEeivSvTH1LqtnQ" name="REGISTRATION_TIME">
           <expr xmi:type="uml:LiteralString" xmi:id="_lHFSomWUEeivSvTH1LqtnQ" name="REGISTRATION_TIME" value="REGISTRATION_TIME"/>
         </when>
       </packagedElement>
@@ -369,8 +350,6 @@
           <expr xmi:type="uml:LiteralString" xmi:id="_IwVd4mX0EeiSsKUmuCYmrw" name="CONSTATUS_PERIOD" value="CONSTATUS_PERIOD"/>
         </when>
       </packagedElement>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_NWDdEGX6EeiSsKUmuCYmrw" name="evError"/>
-      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_NfcCkGX6EeiSsKUmuCYmrw" name="evError" signal="_NWDdEGX6EeiSsKUmuCYmrw"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_8JPEYGX8EeiSsKUmuCYmrw" name="evClosed"/>
       <packagedElement xmi:type="uml:TimeEvent" xmi:id="_x7tfcGYHEeiSsKUmuCYmrw" name="CONNECT_TRY_DELAY" isRelative="true">
         <when xmi:type="uml:TimeExpression" xmi:id="_x7tfcWYHEeiSsKUmuCYmrw" name="CONNECT_TRY_DELAY">
@@ -783,26 +762,26 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_JhWSAF7LEeiYcaQ4qYJ6pg" name="Sequences">
       <packagedElement xmi:type="uml:Interaction" xmi:id="_6kx0YGXCEeiax4a4nV9STA" name="Interaction1">
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_8xQTAGXCEeiax4a4nV9STA" name="conMgr" coveredBy="_bbWvMGXLEeiax4a4nV9STA _O5ToEGXEEeiax4a4nV9STA _LJfR8GXFEeiax4a4nV9STA _c-OpcGXGEeiax4a4nV9STA _nqKAoGXGEeiax4a4nV9STA"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_WGvUkGXDEeiax4a4nV9STA" name="mqtt" coveredBy="_bbYkYGXLEeiax4a4nV9STA _O5SZ8GXEEeiax4a4nV9STA _LJf5AGXFEeiax4a4nV9STA _c-OCYGXGEeiax4a4nV9STA _nqLOwGXGEeiax4a4nV9STA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bbWvMGXLEeiax4a4nV9STA" name="Message18SendEvent" covered="_8xQTAGXCEeiax4a4nV9STA" message="_bbUS8GXLEeiax4a4nV9STA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bbYkYGXLEeiax4a4nV9STA" name="Message18ReceiveEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_bbUS8GXLEeiax4a4nV9STA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_8xQTAGXCEeiax4a4nV9STA" name="conMgr" coveredBy="_O0jZ4Gm0EeiYlcGLg4CfUA _O5ToEGXEEeiax4a4nV9STA _LJfR8GXFEeiax4a4nV9STA _c-OpcGXGEeiax4a4nV9STA _nqKAoGXGEeiax4a4nV9STA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_WGvUkGXDEeiax4a4nV9STA" name="mqtt" coveredBy="_O0kA8Gm0EeiYlcGLg4CfUA _aYYpcGm0EeiYlcGLg4CfUA _aYZQgGm0EeiYlcGLg4CfUA _O5SZ8GXEEeiax4a4nV9STA _LJf5AGXFEeiax4a4nV9STA _c-OCYGXGEeiax4a4nV9STA _nqLOwGXGEeiax4a4nV9STA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O0jZ4Gm0EeiYlcGLg4CfUA" name="Message17SendEvent" covered="_8xQTAGXCEeiax4a4nV9STA" message="_O0Zo4Gm0EeiYlcGLg4CfUA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O0kA8Gm0EeiYlcGLg4CfUA" name="Message17ReceiveEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_O0Zo4Gm0EeiYlcGLg4CfUA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aYYpcGm0EeiYlcGLg4CfUA" name="Message18SendEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_aYYCYGm0EeiYlcGLg4CfUA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aYZQgGm0EeiYlcGLg4CfUA" name="Message18ReceiveEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_aYYCYGm0EeiYlcGLg4CfUA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O5SZ8GXEEeiax4a4nV9STA" name="Message12SendEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_O5RL0GXEEeiax4a4nV9STA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O5ToEGXEEeiax4a4nV9STA" name="Message12ReceiveEvent" covered="_8xQTAGXCEeiax4a4nV9STA" message="_O5RL0GXEEeiax4a4nV9STA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LJfR8GXFEeiax4a4nV9STA" name="Message15SendEvent" covered="_8xQTAGXCEeiax4a4nV9STA" message="_LJdcwGXFEeiax4a4nV9STA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LJf5AGXFEeiax4a4nV9STA" name="Message15ReceiveEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_LJdcwGXFEeiax4a4nV9STA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_c-OCYGXGEeiax4a4nV9STA" name="Message18SendEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_c-MNMGXGEeiax4a4nV9STA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_c-OpcGXGEeiax4a4nV9STA" name="Message18ReceiveEvent" covered="_8xQTAGXCEeiax4a4nV9STA" message="_c-MNMGXGEeiax4a4nV9STA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_c-OCYGXGEeiax4a4nV9STA" name="Message2SendEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_c-MNMGXGEeiax4a4nV9STA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_c-OpcGXGEeiax4a4nV9STA" name="Message2ReceiveEvent" covered="_8xQTAGXCEeiax4a4nV9STA" message="_c-MNMGXGEeiax4a4nV9STA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nqKAoGXGEeiax4a4nV9STA" name="Message21SendEvent" covered="_8xQTAGXCEeiax4a4nV9STA" message="_nqG9UGXGEeiax4a4nV9STA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nqLOwGXGEeiax4a4nV9STA" name="Message21ReceiveEvent" covered="_WGvUkGXDEeiax4a4nV9STA" message="_nqG9UGXGEeiax4a4nV9STA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9fhRwGXDEeiax4a4nV9STA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qRAOcGXDEeiax4a4nV9STA" name="Message9SendEvent" message="_qQ9LIGXDEeiax4a4nV9STA"/>
-        <message xmi:type="uml:Message" xmi:id="_qQ9LIGXDEeiax4a4nV9STA" name="Message9" messageSort="asynchSignal" sendEvent="_qRAOcGXDEeiax4a4nV9STA" signature="_K4x_cGWkEeiax4a4nV9STA"/>
-        <message xmi:type="uml:Message" xmi:id="_O5RL0GXEEeiax4a4nV9STA" name="Message12" messageSort="asynchSignal" receiveEvent="_O5ToEGXEEeiax4a4nV9STA" sendEvent="_O5SZ8GXEEeiax4a4nV9STA" signature="_-RU3QGXFEeiax4a4nV9STA"/>
+        <message xmi:type="uml:Message" xmi:id="_O5RL0GXEEeiax4a4nV9STA" name="Message12" messageSort="asynchSignal" receiveEvent="_O5ToEGXEEeiax4a4nV9STA" sendEvent="_O5SZ8GXEEeiax4a4nV9STA" signature="_SepX0GjJEeiYkNlrzzlm7w"/>
         <message xmi:type="uml:Message" xmi:id="_LJdcwGXFEeiax4a4nV9STA" name="Message15" messageSort="asynchSignal" receiveEvent="_LJf5AGXFEeiax4a4nV9STA" sendEvent="_LJfR8GXFEeiax4a4nV9STA" signature="_F7m0cGWcEeiax4a4nV9STA"/>
-        <message xmi:type="uml:Message" xmi:id="_c-MNMGXGEeiax4a4nV9STA" name="Message18" messageSort="asynchSignal" receiveEvent="_c-OpcGXGEeiax4a4nV9STA" sendEvent="_c-OCYGXGEeiax4a4nV9STA" signature="_mZlwoGXGEeiax4a4nV9STA"/>
+        <message xmi:type="uml:Message" xmi:id="_c-MNMGXGEeiax4a4nV9STA" name="Message1" messageSort="asynchSignal" receiveEvent="_c-OpcGXGEeiax4a4nV9STA" sendEvent="_c-OCYGXGEeiax4a4nV9STA" signature="_mZlwoGXGEeiax4a4nV9STA"/>
         <message xmi:type="uml:Message" xmi:id="_nqG9UGXGEeiax4a4nV9STA" name="Message21" messageSort="asynchSignal" receiveEvent="_nqLOwGXGEeiax4a4nV9STA" sendEvent="_nqKAoGXGEeiax4a4nV9STA" signature="_0iYskGWgEeiax4a4nV9STA"/>
-        <message xmi:type="uml:Message" xmi:id="_bbUS8GXLEeiax4a4nV9STA" name="Message18" messageSort="asynchSignal" receiveEvent="_bbYkYGXLEeiax4a4nV9STA" sendEvent="_bbWvMGXLEeiax4a4nV9STA" signature="_EgYq0F7REeiYcaQ4qYJ6pg"/>
+        <message xmi:type="uml:Message" xmi:id="_O0Zo4Gm0EeiYlcGLg4CfUA" name="Message17" messageSort="asynchSignal" receiveEvent="_O0kA8Gm0EeiYlcGLg4CfUA" sendEvent="_O0jZ4Gm0EeiYlcGLg4CfUA" signature="_EgYq0F7REeiYcaQ4qYJ6pg"/>
+        <message xmi:type="uml:Message" xmi:id="_aYYCYGm0EeiYlcGLg4CfUA" name="Message2" messageSort="asynchSignal" receiveEvent="_aYZQgGm0EeiYlcGLg4CfUA" sendEvent="_aYYpcGm0EeiYlcGLg4CfUA" signature="_5aSgkGWpEeiax4a4nV9STA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_OGJY0GG-EeiiAe1I9uyWIQ" name="MQTT" visibility="public">
