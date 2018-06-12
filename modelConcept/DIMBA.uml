@@ -634,7 +634,6 @@
                         <body>socketDisconnected();</body>
                       </exit>
                       <region xmi:type="uml:Region" xmi:id="_HzZe0GQjEeietdcvou649g" name="Region1">
-                        <transition xmi:type="uml:Transition" xmi:id="_j43UsGQjEeietdcvou649g" source="_KjExIGQjEeietdcvou649g" target="_HzjP0mQjEeietdcvou649g"/>
                         <transition xmi:type="uml:Transition" xmi:id="_KfuFsGQkEeietdcvou649g" source="_HzjP0mQjEeietdcvou649g" target="_MW--wGQjEeietdcvou649g">
                           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_vs0OcGQkEeietdcvou649g">
                             <language>C</language>
@@ -663,6 +662,21 @@
                             <body>getConnStatus();</body>
                           </effect>
                           <trigger xmi:type="uml:Trigger" xmi:id="_eOEx0GX0EeiSsKUmuCYmrw" event="_IwVd4GX0EeiSsKUmuCYmrw"/>
+                        </transition>
+                        <transition xmi:type="uml:Transition" xmi:id="_luIT8G45Eeip65OxVagWOA" source="_KjExIGQjEeietdcvou649g" target="_HzjP0mQjEeietdcvou649g"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_oPmyMG45Eeip65OxVagWOA" source="_KjExIGQjEeietdcvou649g" target="_HzjP0mQjEeietdcvou649g">
+                          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_sjebIG45Eeip65OxVagWOA">
+                            <language>C</language>
+                            <body>sendFail();</body>
+                          </effect>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_qfpiMG45Eeip65OxVagWOA" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
+                        </transition>
+                        <transition xmi:type="uml:Transition" xmi:id="_vYLXYG45Eeip65OxVagWOA" source="_MW--wGQjEeietdcvou649g" target="_HzjP0mQjEeietdcvou649g">
+                          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_zsFckG45Eeip65OxVagWOA">
+                            <language>C</language>
+                            <body>recvFail();</body>
+                          </effect>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_w9S7EG45Eeip65OxVagWOA" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                         </transition>
                         <subvertex xmi:type="uml:State" xmi:id="_HzjP0mQjEeietdcvou649g" name="idle"/>
                         <subvertex xmi:type="uml:State" xmi:id="_KjExIGQjEeietdcvou649g" name="sending">
