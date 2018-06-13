@@ -577,6 +577,7 @@
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_Q5bCgFmLEeiFFviyqWdp8w" source="_4UfoIFiuEeiQLo5rqCRH8w" target="_ltE00GYGEeiSsKUmuCYmrw">
                   <trigger xmi:type="uml:Trigger" xmi:id="_SafzsFmLEeiFFviyqWdp8w" name="evNoResponse" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_JF3NMG6gEei7quLLBC1gQg" event="_W1lmUGW9EeivSvTH1LqtnQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_Rs2LQGYHEeiSsKUmuCYmrw" guard="_OhpTMGYKEeiSsKUmuCYmrw" source="_ltE00GYGEeiSsKUmuCYmrw" target="_LcAXkFmLEeiFFviyqWdp8w">
                   <ownedRule xmi:type="uml:Constraint" xmi:id="_OhpTMGYKEeiSsKUmuCYmrw">
