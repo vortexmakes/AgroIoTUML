@@ -363,6 +363,15 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="_SepX0GjJEeiYkNlrzzlm7w" name="evRecv"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_SnRvYGjJEeiYkNlrzzlm7w" name="evRecv" signal="_SepX0GjJEeiYkNlrzzlm7w"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_CXg7gG7EEeizZc1aGKRLzQ" name="evNetClockSync"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Ch1VIG7EEeizZc1aGKRLzQ" name="evNetClockSync" signal="_CXg7gG7EEeizZc1aGKRLzQ"/>
+      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_Oh4moG7EEeizZc1aGKRLzQ" name="WAIT_NETCLOCK_TIME" isRelative="true">
+        <when xmi:type="uml:TimeExpression" xmi:id="_Oh4moW7EEeizZc1aGKRLzQ" name="WAIT_NETCLOCK_TIME">
+          <expr xmi:type="uml:LiteralString" xmi:id="_Oh4mom7EEeizZc1aGKRLzQ" name="WAIT_NETCLOCK_TIME" value="WAIT_NETCLOCK_TIME"/>
+        </when>
+      </packagedElement>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_c3jrsG7EEeizZc1aGKRLzQ" name="evLocalTime" signal="_gL2G8G7EEeizZc1aGKRLzQ"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_gL2G8G7EEeizZc1aGKRLzQ" name="evLocalTime"/>
     </packagedElement>
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_i1rp0FRTEeiBd_DXg33BBQ" name="ConMgr">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_yA2HgFioEeiQLo5rqCRH8w">
@@ -480,7 +489,7 @@
                 <transition xmi:type="uml:Transition" xmi:id="_4k4ikFl0EeioMqgkRul4rQ" source="_k7W-QFl0EeioMqgkRul4rQ" target="_Bd0PAFitEeiQLo5rqCRH8w">
                   <trigger xmi:type="uml:Trigger" xmi:id="_6hs0kFl0EeioMqgkRul4rQ" event="_gqE2sFitEeiQLo5rqCRH8w"/>
                 </transition>
-                <transition xmi:type="uml:Transition" xmi:id="_TTZ2IFqSEeiA69UjQR0RyA" source="_Bd0PAFitEeiQLo5rqCRH8w" target="_4YnJoGQTEeietdcvou649g">
+                <transition xmi:type="uml:Transition" xmi:id="_TTZ2IFqSEeiA69UjQR0RyA" source="_Bd0PAFitEeiQLo5rqCRH8w" target="_83nGoG6qEeizZc1aGKRLzQ">
                   <trigger xmi:type="uml:Trigger" xmi:id="_kkm4MFqSEeiA69UjQR0RyA" event="_gqE2sFitEeiQLo5rqCRH8w"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_m-PgQFipEeiQLo5rqCRH8w" guard="_rtXh0FipEeiQLo5rqCRH8w" source="_1Z3ZIFilEeiQLo5rqCRH8w" target="_tdaWkGTzEeiNN_MZ6epyJg">
@@ -496,6 +505,12 @@
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_IfgUsGQUEeietdcvou649g" source="_4YnJoGQTEeietdcvou649g" target="_mX_E4FqTEeiA69UjQR0RyA">
                   <trigger xmi:type="uml:Trigger" xmi:id="_Pxn3cGQUEeietdcvou649g" event="_cCsw8FlzEeioMqgkRul4rQ"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_F2UHAG6rEeizZc1aGKRLzQ" source="_83nGoG6qEeizZc1aGKRLzQ" target="_jm4N8G7FEeizZc1aGKRLzQ">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_KEewkG6rEeizZc1aGKRLzQ" event="_cCsw8FlzEeioMqgkRul4rQ"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_rrF8AG7FEeizZc1aGKRLzQ" source="_jm4N8G7FEeizZc1aGKRLzQ" target="_4YnJoGQTEeietdcvou649g">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_uBCfsG7FEeizZc1aGKRLzQ" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                 </transition>
                 <subvertex xmi:type="uml:State" xmi:id="_YZ4HYFRVEeiBd_DXg33BBQ" name="sync">
                   <entry xmi:type="uml:OpaqueBehavior" xmi:id="_hw8H8FRWEeiBd_DXg33BBQ">
@@ -525,17 +540,24 @@
                     <body>setManualGet();</body>
                   </entry>
                 </subvertex>
+                <subvertex xmi:type="uml:State" xmi:id="_83nGoG6qEeizZc1aGKRLzQ" name="enableNetTime">
+                  <entry xmi:type="uml:OpaqueBehavior" xmi:id="_Hgf8oG7GEeizZc1aGKRLzQ">
+                    <language>C</language>
+                    <body>netTimeEnable();</body>
+                  </entry>
+                </subvertex>
+                <subvertex xmi:type="uml:State" xmi:id="_jm4N8G7FEeizZc1aGKRLzQ" name="cipShutdown">
+                  <entry xmi:type="uml:OpaqueBehavior" xmi:id="_RhDbkG7GEeizZc1aGKRLzQ">
+                    <language>C</language>
+                    <body>cipShutdown();</body>
+                  </entry>
+                </subvertex>
               </region>
             </subvertex>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_vp674FRUEeiBd_DXg33BBQ" name=""/>
             <subvertex xmi:type="uml:State" xmi:id="_tuf50FiuEeiQLo5rqCRH8w" name="registered">
               <region xmi:type="uml:Region" xmi:id="_4UdL4liuEeiQLo5rqCRH8w" name="Region1">
-                <transition xmi:type="uml:Transition" xmi:id="_Ow-C8Fi0EeiQLo5rqCRH8w" source="_BJx0gFi0EeiQLo5rqCRH8w" target="_6a4F0FiuEeiQLo5rqCRH8w">
-                  <effect xmi:type="uml:OpaqueBehavior" xmi:id="_3_bGcGXoEeiSsKUmuCYmrw">
-                    <language>C</language>
-                    <body>configureInit();</body>
-                  </effect>
-                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_Ow-C8Fi0EeiQLo5rqCRH8w" source="_BJx0gFi0EeiQLo5rqCRH8w" target="_VBfj0G7DEeizZc1aGKRLzQ"/>
                 <transition xmi:type="uml:Transition" xmi:id="_nFlWQFz6EeildqcvJZY8yg" source="_6a4F0FiuEeiQLo5rqCRH8w" target="_4UfoIFiuEeiQLo5rqCRH8w">
                   <effect xmi:type="uml:OpaqueBehavior" xmi:id="_44AmYGYLEeiSsKUmuCYmrw">
                     <language>C</language>
@@ -594,6 +616,21 @@
                       <body>else</body>
                     </specification>
                   </ownedRule>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_ivXCAG7DEeizZc1aGKRLzQ" source="_am3Q4G7DEeizZc1aGKRLzQ" target="_6a4F0FiuEeiQLo5rqCRH8w">
+                  <effect xmi:type="uml:OpaqueBehavior" xmi:id="_piJvAG7EEeizZc1aGKRLzQ">
+                    <language>C</language>
+                    <body>rtimeSync();</body>
+                  </effect>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_dfhqoG7EEeizZc1aGKRLzQ" name="evLocalTime" event="_c3jrsG7EEeizZc1aGKRLzQ"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_6VY4IG7DEeizZc1aGKRLzQ" source="_VBfj0G7DEeizZc1aGKRLzQ" target="_am3Q4G7DEeizZc1aGKRLzQ">
+                  <effect xmi:type="uml:OpaqueBehavior" xmi:id="_l-SmsG7EEeizZc1aGKRLzQ">
+                    <language>C</language>
+                    <body>localTimeGet();</body>
+                  </effect>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_D3HtEG7EEeizZc1aGKRLzQ" name="evNetClockSync" event="_Ch1VIG7EEeizZc1aGKRLzQ"/>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_O7VBYG7EEeizZc1aGKRLzQ" name="WAIT_NETCLOCK_TIME" event="_Oh4moG7EEeizZc1aGKRLzQ"/>
                 </transition>
                 <subvertex xmi:type="uml:State" xmi:id="_4UfoIFiuEeiQLo5rqCRH8w" name="connecting">
                   <region xmi:type="uml:Region" xmi:id="_k7XjUlmKEeiFFviyqWdp8w" name="Region1">
@@ -712,7 +749,12 @@
                 </subvertex>
                 <subvertex xmi:type="uml:State" xmi:id="_6a4F0FiuEeiQLo5rqCRH8w" name="configure">
                   <region xmi:type="uml:Region" xmi:id="_v9DPcVmHEeiFFviyqWdp8w" name="Region1">
-                    <transition xmi:type="uml:Transition" xmi:id="_4LIEIFmHEeiFFviyqWdp8w" source="_2j2kUFmHEeiFFviyqWdp8w" target="_v9QDwFmHEeiFFviyqWdp8w"/>
+                    <transition xmi:type="uml:Transition" xmi:id="_4LIEIFmHEeiFFviyqWdp8w" source="_2j2kUFmHEeiFFviyqWdp8w" target="_v9QDwFmHEeiFFviyqWdp8w">
+                      <effect xmi:type="uml:OpaqueBehavior" xmi:id="_VfxD8G6yEeizZc1aGKRLzQ">
+                        <language>C</language>
+                        <body>configureInit();</body>
+                      </effect>
+                    </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_P46vIFmIEeiFFviyqWdp8w" source="_v9QDwFmHEeiFFviyqWdp8w" target="_uEjAQFmIEeiFFviyqWdp8w">
                       <trigger xmi:type="uml:Trigger" xmi:id="_Tqkb0FmIEeiFFviyqWdp8w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                     </transition>
@@ -763,6 +805,8 @@
                   </exit>
                 </subvertex>
                 <subvertex xmi:type="uml:Pseudostate" xmi:id="_ltE00GYGEeiSsKUmuCYmrw" name="" kind="junction"/>
+                <subvertex xmi:type="uml:State" xmi:id="_VBfj0G7DEeizZc1aGKRLzQ" name="waitNetClockSync"/>
+                <subvertex xmi:type="uml:State" xmi:id="_am3Q4G7DEeizZc1aGKRLzQ" name="localTime"/>
               </region>
             </subvertex>
             <subvertex xmi:type="uml:State" xmi:id="_JgDVMFivEeiQLo5rqCRH8w" name="unregistered">
