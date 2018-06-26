@@ -1006,11 +1006,7 @@
         <subvertex xmi:type="uml:State" xmi:id="_dk6MkGWSEeiax4a4nV9STA" name="Idle"/>
         <subvertex xmi:type="uml:State" xmi:id="_kd7S0GWSEeiax4a4nV9STA" name="Active">
           <region xmi:type="uml:Region" xmi:id="_KrjrgGWTEeiax4a4nV9STA" name="Region1">
-            <transition xmi:type="uml:Transition" xmi:id="_dur-MGWTEeiax4a4nV9STA" source="_KrmHwGWTEeiax4a4nV9STA" target="_UgtLsGWTEeiax4a4nV9STA">
-              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ZSvdsGWbEeiax4a4nV9STA">
-                <language>C</language>
-                <body>initRecvAll()</body>
-              </effect>
+            <transition xmi:type="uml:Transition" xmi:id="_dur-MGWTEeiax4a4nV9STA" source="_KrmHwGWTEeiax4a4nV9STA" target="_UBcMQHlcEei9PLqHnha2aw">
               <trigger xmi:type="uml:Trigger" xmi:id="_VSmpEGWbEeiax4a4nV9STA" name="evSyncTout" event="_VDvtsGWbEeiax4a4nV9STA"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_pwTggGWUEeiax4a4nV9STA" source="_UgtLsGWTEeiax4a4nV9STA" target="_myY94GWUEeiax4a4nV9STA">
@@ -1217,6 +1213,30 @@
             <transition xmi:type="uml:Transition" xmi:id="_tbiYIHlIEei9PLqHnha2aw" source="_KrmHwGWTEeiax4a4nV9STA" target="_dk6MkGWSEeiax4a4nV9STA">
               <trigger xmi:type="uml:Trigger" xmi:id="_x5JL4HlIEei9PLqHnha2aw" event="_ACYHoGG0EeiiAe1I9uyWIQ"/>
             </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_bgfXwHlcEei9PLqHnha2aw" guard="_x5LRAHlcEei9PLqHnha2aw" source="_UBcMQHlcEei9PLqHnha2aw" target="_UgtLsGWTEeiax4a4nV9STA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_x5LRAHlcEei9PLqHnha2aw">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_zlwuoHlcEei9PLqHnha2aw">
+                  <language>C</language>
+                  <body>else</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_7saFoHlcEei9PLqHnha2aw">
+                <language>C</language>
+                <body>initRecvAll()</body>
+              </effect>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_fDm5MHlcEei9PLqHnha2aw" guard="_mEKx4HlcEei9PLqHnha2aw" source="_UBcMQHlcEei9PLqHnha2aw" target="_KrmHwGWTEeiax4a4nV9STA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_mEKx4HlcEei9PLqHnha2aw">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_rHKKoHlcEei9PLqHnha2aw">
+                  <language>C</language>
+                  <body>isReconnect()</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_uiELQHlcEei9PLqHnha2aw">
+                <language>C</language>
+                <body>reconnectSync()</body>
+              </effect>
+            </transition>
             <subvertex xmi:type="uml:State" xmi:id="_KrmHwGWTEeiax4a4nV9STA" name="WaitSync">
               <entry xmi:type="uml:OpaqueBehavior" xmi:id="_BKQYMG8GEeibONxqEjnGLw">
                 <language>C</language>
@@ -1248,6 +1268,7 @@
               </entry>
             </subvertex>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_h933QGWaEeiax4a4nV9STA" name="C38" kind="choice"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_UBcMQHlcEei9PLqHnha2aw" name="C36" kind="choice"/>
           </region>
         </subvertex>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_nXzDYWWSEeiax4a4nV9STA" name="Initial3"/>
