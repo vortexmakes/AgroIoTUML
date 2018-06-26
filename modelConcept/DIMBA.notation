@@ -768,6 +768,10 @@
                                                 <styles xmi:type="notation:TitleStyle" xmi:id="_Hz_7xGQjEeietdcvou649g"/>
                                                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hz_7xWQjEeietdcvou649g"/>
                                               </children>
+                                              <children xmi:type="notation:Shape" xmi:id="_nCNCEHlJEei2TLacF0kaRA" type="Transition_InternalTransitionLabel">
+                                                <element xmi:type="uml:Transition" href="DIMBA.uml#_c6bg0HlJEei2TLacF0kaRA"/>
+                                                <layoutConstraint xmi:type="notation:Location" xmi:id="_nCNCEXlJEei2TLacF0kaRA" x="-10" y="-10"/>
+                                              </children>
                                               <element xmi:type="uml:State" href="DIMBA.uml#_HzjP0mQjEeietdcvou649g"/>
                                               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HzjP1GQjEeietdcvou649g" x="39" y="56" width="141" height="61"/>
                                             </children>

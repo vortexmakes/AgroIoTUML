@@ -725,6 +725,13 @@
                           </effect>
                           <trigger xmi:type="uml:Trigger" xmi:id="_w9S7EG45Eeip65OxVagWOA" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                         </transition>
+                        <transition xmi:type="uml:Transition" xmi:id="_c6bg0HlJEei2TLacF0kaRA" kind="internal" source="_HzjP0mQjEeietdcvou649g" target="_HzjP0mQjEeietdcvou649g">
+                          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_r4ajEHlJEei2TLacF0kaRA">
+                            <language>C</language>
+                            <body>resetParser();</body>
+                          </effect>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_mSWScHlJEei2TLacF0kaRA" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
+                        </transition>
                         <subvertex xmi:type="uml:State" xmi:id="_HzjP0mQjEeietdcvou649g" name="idle"/>
                         <subvertex xmi:type="uml:State" xmi:id="_KjExIGQjEeietdcvou649g" name="sending">
                           <region xmi:type="uml:Region" xmi:id="_rT1s8GQtEeietdcvou649g" name="Region1">
