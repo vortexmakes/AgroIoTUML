@@ -1,1 +1,1 @@
-# dimba_uml
+# UML models of DIMBA project
