@@ -1,1 +1,1 @@
-# UML models of DIMBA project
+# UML models of AgroIoT project
