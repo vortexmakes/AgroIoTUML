@@ -3103,7 +3103,7 @@
             <specification xmi:type="uml:LiteralString" xmi:id="_6CRwsbBzEeiyxvMIGe898g" value="else"/>
           </ownedRule>
         </transition>
-        <transition xmi:type="uml:Transition" xmi:id="_8hjE8LByEeiyxvMIGe898g" guard="_1o4ukLBzEeiyxvMIGe898g" source="__8B5sLBwEeiyxvMIGe898g" target="_6ZaJMLBxEeiyxvMIGe898g">
+        <transition xmi:type="uml:Transition" xmi:id="_8hjE8LByEeiyxvMIGe898g" guard="_1o4ukLBzEeiyxvMIGe898g" source="__8B5sLBwEeiyxvMIGe898g" target="_na24sLBqEeiyxvMIGe898g">
           <ownedRule xmi:type="uml:Constraint" xmi:id="_1o4ukLBzEeiyxvMIGe898g">
             <specification xmi:type="uml:LiteralString" xmi:id="_1o4ukbBzEeiyxvMIGe898g" value="getRMCTime() &lt; 0"/>
           </ownedRule>
@@ -3115,7 +3115,7 @@
           <trigger xmi:type="uml:Trigger" xmi:id="_3DYhMLB0EeiyxvMIGe898g" event="_OUlowLBzEeiyxvMIGe898g"/>
         </transition>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_kvFrcLBpEeiyxvMIGe898g" name=""/>
-        <subvertex xmi:type="uml:State" xmi:id="_na24sLBqEeiyxvMIGe898g" name="WaitRMC"/>
+        <subvertex xmi:type="uml:State" xmi:id="_na24sLBqEeiyxvMIGe898g" name="WaitTimeSync"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_vd2z4LBsEeiyxvMIGe898g" name="" kind="choice"/>
         <subvertex xmi:type="uml:State" xmi:id="_4DCPELBuEeiyxvMIGe898g" name="Configure">
           <entry xmi:type="uml:OpaqueBehavior" xmi:id="_-izH0LBuEeiyxvMIGe898g">
@@ -3126,14 +3126,21 @@ sendUBX(pInitSeq);</body>
         </subvertex>
         <subvertex xmi:type="uml:State" xmi:id="_WLqaELBwEeiyxvMIGe898g" name="Failure"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="__8B5sLBwEeiyxvMIGe898g" name="" kind="choice"/>
-        <subvertex xmi:type="uml:State" xmi:id="_6ZaJMLBxEeiyxvMIGe898g" name="LostTimeSync"/>
         <subvertex xmi:type="uml:State" xmi:id="_UhnBILByEeiyxvMIGe898g" name="OnTimeSync">
           <region xmi:type="uml:Region" xmi:id="_70euILBzEeiyxvMIGe898g" name="Region1">
             <transition xmi:type="uml:Transition" xmi:id="_PokHMLB1EeiyxvMIGe898g" source="_HGGW4LB1EeiyxvMIGe898g" target="_NvUGkLB1EeiyxvMIGe898g"/>
-            <transition xmi:type="uml:Transition" xmi:id="_Q1nJILB1EeiyxvMIGe898g" source="_NvUGkLB1EeiyxvMIGe898g" target="_IOpIwLB0EeiyxvMIGe898g"/>
-            <transition xmi:type="uml:Transition" xmi:id="_RnWvILB1EeiyxvMIGe898g" source="_NvUGkLB1EeiyxvMIGe898g" target="_IfZhkLB0EeiyxvMIGe898g"/>
-            <subvertex xmi:type="uml:State" xmi:id="_IOpIwLB0EeiyxvMIGe898g" name="ValidLocation"/>
-            <subvertex xmi:type="uml:State" xmi:id="_IfZhkLB0EeiyxvMIGe898g" name="InvalidLocation"/>
+            <transition xmi:type="uml:Transition" xmi:id="_Q1nJILB1EeiyxvMIGe898g" guard="_rAkxMLElEeiyxvMIGe898g" source="_NvUGkLB1EeiyxvMIGe898g" target="_IfZhkLB0EeiyxvMIGe898g">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_rAkxMLElEeiyxvMIGe898g">
+                <specification xmi:type="uml:LiteralString" xmi:id="_rAkxMbElEeiyxvMIGe898g" value="else"/>
+              </ownedRule>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_RnWvILB1EeiyxvMIGe898g" guard="_b5OXkLElEeiyxvMIGe898g" source="_NvUGkLB1EeiyxvMIGe898g" target="_IOpIwLB0EeiyxvMIGe898g">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_b5OXkLElEeiyxvMIGe898g">
+                <specification xmi:type="uml:LiteralString" xmi:id="_b5OXkbElEeiyxvMIGe898g" name="isValid" value="isValid()"/>
+              </ownedRule>
+            </transition>
+            <subvertex xmi:type="uml:State" xmi:id="_IOpIwLB0EeiyxvMIGe898g" name="Valid"/>
+            <subvertex xmi:type="uml:State" xmi:id="_IfZhkLB0EeiyxvMIGe898g" name="Invalid"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_HGGW4LB1EeiyxvMIGe898g" name=""/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_NvUGkLB1EeiyxvMIGe898g" name="" kind="choice"/>
           </region>
