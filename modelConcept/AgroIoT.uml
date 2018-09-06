@@ -452,13 +452,13 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="__6CbkHs8EeiOIuysW0vLKg" name="evSigLevel"/>
       <packagedElement xmi:type="uml:TimeEvent" xmi:id="_WYjcALBvEeiyxvMIGe898g" name="cmdTout" isRelative="true">
-        <when xmi:type="uml:TimeExpression" xmi:id="_WYjcAbBvEeiyxvMIGe898g" name="GPS_INTERCMD_TIME">
-          <expr xmi:type="uml:LiteralString" xmi:id="_WYjcArBvEeiyxvMIGe898g" name="GPS_INTERCMD_TIME" value="GPS_INTERCMD_TIME"/>
+        <when xmi:type="uml:TimeExpression" xmi:id="_WYjcAbBvEeiyxvMIGe898g" name="UBX_INTERCMD_TIME">
+          <expr xmi:type="uml:LiteralString" xmi:id="_WYjcArBvEeiyxvMIGe898g" name="UBX_INTERCMD_TIME" value="UBX_INTERCMD_TIME"/>
         </when>
       </packagedElement>
-      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_dUbMgLBwEeiyxvMIGe898g" name="RMC_RESPONCE_TIME" isRelative="true">
-        <when xmi:type="uml:TimeExpression" xmi:id="_gum0YLBwEeiyxvMIGe898g" name="RMC_RESPONCE_TIME">
-          <expr xmi:type="uml:LiteralString" xmi:id="_pnxNcLBwEeiyxvMIGe898g" name="RMC_RESPONCE_TIME" value="RMC_RESPONCE_TIME"/>
+      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_dUbMgLBwEeiyxvMIGe898g" name="RMC_PERIOD_TIMEOUT" isRelative="true">
+        <when xmi:type="uml:TimeExpression" xmi:id="_gum0YLBwEeiyxvMIGe898g" name="RMC_PERIOD_TIMEOUT">
+          <expr xmi:type="uml:LiteralString" xmi:id="_pnxNcLBwEeiyxvMIGe898g" name="RMC_PERIOD_TIMEOUT" value="RMC_PERIOD_TIMEOUT"/>
         </when>
       </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="_OJ1KQLBzEeiyxvMIGe898g" name="evRMC"/>
@@ -3078,13 +3078,13 @@
         <transition xmi:type="uml:Transition" xmi:id="_CPNvMLBvEeiyxvMIGe898g" source="_4DCPELBuEeiyxvMIGe898g" target="_vd2z4LBsEeiyxvMIGe898g">
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_zDNCkLBvEeiyxvMIGe898g">
             <language>C</language>
-            <body>++pInitSeq;</body>
+            <body>++me->pInitCmd;</body>
           </effect>
           <trigger xmi:type="uml:Trigger" xmi:id="_WyGkcLBvEeiyxvMIGe898g" event="_WYjcALBvEeiyxvMIGe898g"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_7gmssLBvEeiyxvMIGe898g" guard="_nsBnkLByEeiyxvMIGe898g" source="_vd2z4LBsEeiyxvMIGe898g" target="_4DCPELBuEeiyxvMIGe898g">
           <ownedRule xmi:type="uml:Constraint" xmi:id="_nsBnkLByEeiyxvMIGe898g">
-            <specification xmi:type="uml:LiteralString" xmi:id="_nsBnkbByEeiyxvMIGe898g" value="pInitSeq != NULL"/>
+            <specification xmi:type="uml:LiteralString" xmi:id="_nsBnkbByEeiyxvMIGe898g" value="me->pInitCmd->cmd != NULL"/>
           </ownedRule>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_E1pJcLBwEeiyxvMIGe898g" guard="_tdVe4LByEeiyxvMIGe898g" source="_vd2z4LBsEeiyxvMIGe898g" target="_na24sLBqEeiyxvMIGe898g">
@@ -3105,7 +3105,7 @@
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_8hjE8LByEeiyxvMIGe898g" guard="_1o4ukLBzEeiyxvMIGe898g" source="__8B5sLBwEeiyxvMIGe898g" target="_na24sLBqEeiyxvMIGe898g">
           <ownedRule xmi:type="uml:Constraint" xmi:id="_1o4ukLBzEeiyxvMIGe898g">
-            <specification xmi:type="uml:LiteralString" xmi:id="_1o4ukbBzEeiyxvMIGe898g" value="getRMCTime() &lt; 0"/>
+            <specification xmi:type="uml:LiteralString" xmi:id="_1o4ukbBzEeiyxvMIGe898g" value="(rmc_time((RMC_t *)(pe)) &lt; 0)"/>
           </ownedRule>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_hyLNYLB0EeiyxvMIGe898g" source="_UhnBILByEeiyxvMIGe898g" target="_WLqaELBwEeiyxvMIGe898g">
@@ -3120,8 +3120,10 @@
         <subvertex xmi:type="uml:State" xmi:id="_4DCPELBuEeiyxvMIGe898g" name="Configure">
           <entry xmi:type="uml:OpaqueBehavior" xmi:id="_-izH0LBuEeiyxvMIGe898g">
             <language>C</language>
-            <body>pInitSeq = InitSequences[];&#xD;
-sendUBX(pInitSeq);</body>
+            <body>{ &#xD;
+ me->pInitCmd = InitCmds;&#xD;
+ ubx_sendCmd(me->pInitCmd->cmd, me->pInitCmd->size);&#xD;
+}</body>
           </entry>
         </subvertex>
         <subvertex xmi:type="uml:State" xmi:id="_WLqaELBwEeiyxvMIGe898g" name="Failure"/>
@@ -3136,11 +3138,11 @@ sendUBX(pInitSeq);</body>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_RnWvILB1EeiyxvMIGe898g" guard="_b5OXkLElEeiyxvMIGe898g" source="_NvUGkLB1EeiyxvMIGe898g" target="_IOpIwLB0EeiyxvMIGe898g">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_b5OXkLElEeiyxvMIGe898g">
-                <specification xmi:type="uml:LiteralString" xmi:id="_b5OXkbElEeiyxvMIGe898g" name="isValid" value="isValid()"/>
+                <specification xmi:type="uml:LiteralString" xmi:id="_b5OXkbElEeiyxvMIGe898g" name="isValid" value="(rmc_status((RMC_t *(pe))) == RMC_StatusActive)"/>
               </ownedRule>
             </transition>
-            <subvertex xmi:type="uml:State" xmi:id="_IOpIwLB0EeiyxvMIGe898g" name="Valid"/>
-            <subvertex xmi:type="uml:State" xmi:id="_IfZhkLB0EeiyxvMIGe898g" name="Invalid"/>
+            <subvertex xmi:type="uml:State" xmi:id="_IOpIwLB0EeiyxvMIGe898g" name="Active"/>
+            <subvertex xmi:type="uml:State" xmi:id="_IfZhkLB0EeiyxvMIGe898g" name="Void"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_HGGW4LB1EeiyxvMIGe898g" name=""/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_NvUGkLB1EeiyxvMIGe898g" name="" kind="choice"/>
           </region>
