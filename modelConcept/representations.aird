@@ -14,4 +14,5 @@
   <semanticResources>AgroIoT.di</semanticResources>
   <semanticResources>AgroIoT.notation</semanticResources>
   <semanticResources>AgroIoT.uml</semanticResources>
+  <semanticResources>AgroIoT_es_AR.properties</semanticResources>
 </viewpoint:DAnalysis>

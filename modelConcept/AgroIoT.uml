@@ -124,9 +124,6 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_4kCxwLVNEeiCDrvEUVz2Ug" name="rkh_sma_t" type="_zg4Z4LVNEeiCDrvEUVz2Ug" association="_4jpJILVNEeiCDrvEUVz2Ug"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_O1HAELVOEeiCDrvEUVz2Ug" name="AbstractDataClient">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_PNVzELXAEeix7r8U1ZxtVA" annotatedElement="_O1HAELVOEeiCDrvEUVz2Ug">
-        <body>ffffffffff</body>
-      </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Smdx0bVOEeiCDrvEUVz2Ug" name="databus" type="_DdBA8Jl3Eeii_JvRFExniQ" association="_SmaHcLVOEeiCDrvEUVz2Ug">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SmeY4LVOEeiCDrvEUVz2Ug"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sme_8LVOEeiCDrvEUVz2Ug" value="1"/>
@@ -623,6 +620,13 @@
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_OUlowLBzEeiyxvMIGe898g" name="evRMC" signal="_OJ1KQLBzEeiyxvMIGe898g"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_aNva0LaDEeiBjYcY2CW_sg" name="evTimeout"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_aViE4LaDEeiBjYcY2CW_sg" name="evTimeout" signal="_aNva0LaDEeiBjYcY2CW_sg"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_iEtTMMsgEeikWLZaDjnU1A" name="evEndOfCycle"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_iSIrMMsgEeikWLZaDjnU1A" name="evEndOfCycle" signal="_iEtTMMsgEeikWLZaDjnU1A"/>
+      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_vtjHcMsgEeikWLZaDjnU1A" name="DEVICE_CYCLE_TIME" isRelative="true">
+        <when xmi:type="uml:TimeExpression" xmi:id="_vtjHccsgEeikWLZaDjnU1A" name="DEVICE_CYCLE_TIME">
+          <expr xmi:type="uml:LiteralString" xmi:id="_6TImEMsgEeikWLZaDjnU1A" name="DEVICE_CYCLE_TIME" value="DEVICE_CYCLE_TIME"/>
+        </when>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_i1rp0FRTEeiBd_DXg33BBQ" name="ConMgr">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_yA2HgFioEeiQLo5rqCRH8w">
@@ -3307,11 +3311,19 @@
               <ownedRule xmi:type="uml:Constraint" xmi:id="_rAkxMLElEeiyxvMIGe898g">
                 <specification xmi:type="uml:LiteralString" xmi:id="_rAkxMbElEeiyxvMIGe898g" value="else"/>
               </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_yoh8wMseEeikWLZaDjnU1A">
+                <language>C</language>
+                <body>publishInvRmc();</body>
+              </effect>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_RnWvILB1EeiyxvMIGe898g" guard="_b5OXkLElEeiyxvMIGe898g" source="_NvUGkLB1EeiyxvMIGe898g" target="_IOpIwLB0EeiyxvMIGe898g">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_b5OXkLElEeiyxvMIGe898g">
                 <specification xmi:type="uml:LiteralString" xmi:id="_b5OXkbElEeiyxvMIGe898g" name="isValid" value="(rmc_status((RMC_t *(pe))) == RMC_StatusActive)"/>
               </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_uoBUsMseEeikWLZaDjnU1A">
+                <language>C</language>
+                <body>publishRmc();</body>
+              </effect>
             </transition>
             <subvertex xmi:type="uml:State" xmi:id="_IOpIwLB0EeiyxvMIGe898g" name="Active"/>
             <subvertex xmi:type="uml:State" xmi:id="_IfZhkLB0EeiyxvMIGe898g" name="Void"/>
@@ -3319,6 +3331,49 @@
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_NvUGkLB1EeiyxvMIGe898g" name="" kind="choice"/>
           </region>
         </subvertex>
+      </region>
+    </packagedElement>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_OTHNcMsfEeikWLZaDjnU1A" name="DeviceServer">
+      <region xmi:type="uml:Region" xmi:id="_PLPIQMsfEeikWLZaDjnU1A" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_t8cysMsfEeikWLZaDjnU1A" source="_THm3MMsfEeikWLZaDjnU1A" target="_Wp1n0MsfEeikWLZaDjnU1A">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_4rAAEMsfEeikWLZaDjnU1A">
+            <language>C</language>
+            <body>startPs();</body>
+          </effect>
+          <trigger xmi:type="uml:Trigger" xmi:id="_zfPF0MsfEeikWLZaDjnU1A" event="_KXEO4FLfEei-ps2IrsePSA"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_jqHVUMshEeikWLZaDjnU1A" source="_Wp1n0MsfEeikWLZaDjnU1A" target="_THm3MMsfEeikWLZaDjnU1A">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_cq-XsMvLEeikWLZaDjnU1A">
+            <language>C</language>
+            <body>stopPs();</body>
+          </effect>
+          <trigger xmi:type="uml:Trigger" xmi:id="_lwl5oMshEeikWLZaDjnU1A" event="_rO3LUFLfEei-ps2IrsePSA"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_jpyvgMvBEeikWLZaDjnU1A" source="_iLdwUMvBEeikWLZaDjnU1A" target="_THm3MMsfEeikWLZaDjnU1A"/>
+        <subvertex xmi:type="uml:State" xmi:id="_THm3MMsfEeikWLZaDjnU1A" name="inactive"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Wp1n0MsfEeikWLZaDjnU1A" name="active">
+          <region xmi:type="uml:Region" xmi:id="_aEph0csfEeikWLZaDjnU1A" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_7yhxsMsfEeikWLZaDjnU1A" source="_aEtzQMsfEeikWLZaDjnU1A" target="_mHwuYMsfEeikWLZaDjnU1A">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_PKqQgMvPEeikWLZaDjnU1A">
+                <language>C</language>
+                <body>publishData();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_iqh9EMsgEeikWLZaDjnU1A" name="evEndOfCycle" event="_iSIrMMsgEeikWLZaDjnU1A"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_D4UNEMsgEeikWLZaDjnU1A" source="_mHwuYMsfEeikWLZaDjnU1A" target="_aEtzQMsfEeikWLZaDjnU1A">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_NAWTIMshEeikWLZaDjnU1A">
+                <language>C</language>
+                <body>restartPs();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_wDOcgMsgEeikWLZaDjnU1A" name="DEVICE_CYCLE_TIME" event="_vtjHcMsgEeikWLZaDjnU1A"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_H_ihIMsgEeikWLZaDjnU1A" source="_FPPjwMsgEeikWLZaDjnU1A" target="_aEtzQMsfEeikWLZaDjnU1A"/>
+            <subvertex xmi:type="uml:State" xmi:id="_aEtzQMsfEeikWLZaDjnU1A" name="inCylcle"/>
+            <subvertex xmi:type="uml:State" xmi:id="_mHwuYMsfEeikWLZaDjnU1A" name="idle"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_FPPjwMsgEeikWLZaDjnU1A" name=""/>
+          </region>
+        </subvertex>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_iLdwUMvBEeikWLZaDjnU1A" name=""/>
       </region>
     </packagedElement>
   </packagedElement>
