@@ -4,7 +4,6 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_Rf1_gFLLEei-ps2IrsePSA" name="Structure">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_EwymgLtkEeiWvNFPxkFrNg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_tp__YFdxEeia3PgQtXbrog" name="ConMgr" isActive="true">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_W-WZEn-NEeiGQ_qU31K2fA" name="modcmd" type="_u3OAcFdxEeia3PgQtXbrog" association="_W-VyAH-NEeiGQ_qU31K2fA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W-XAIH-NEeiGQ_qU31K2fA"/>
@@ -79,7 +78,7 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_r967ln-TEeiGQ_qU31K2fA" name="date" type="_jDbFwH-TEeiGQ_qU31K2fA" association="_r967kH-TEeiGQ_qU31K2fA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_eX7mYH_oEeiGQ_qU31K2fA" name="DataCollector" isActive="true">
+    <packagedElement xmi:type="uml:Class" xmi:id="_eX7mYH_oEeiGQ_qU31K2fA" name="Collector" isActive="true">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ljLsI3_oEeiGQ_qU31K2fA" name="gpsMod" type="_1hZZcFdxEeia3PgQtXbrog" association="_ljLsIH_oEeiGQ_qU31K2fA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ljLsJH_oEeiGQ_qU31K2fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ljLsJX_oEeiGQ_qU31K2fA" value="1"/>
@@ -124,9 +123,6 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_4kCxwLVNEeiCDrvEUVz2Ug" name="rkh_sma_t" type="_zg4Z4LVNEeiCDrvEUVz2Ug" association="_4jpJILVNEeiCDrvEUVz2Ug"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_O1HAELVOEeiCDrvEUVz2Ug" name="AbstractDataClient">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_PNVzELXAEeix7r8U1ZxtVA" annotatedElement="_O1HAELVOEeiCDrvEUVz2Ug">
-        <body>ffffffffff</body>
-      </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Smdx0bVOEeiCDrvEUVz2Ug" name="databus" type="_DdBA8Jl3Eeii_JvRFExniQ" association="_SmaHcLVOEeiCDrvEUVz2Ug">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SmeY4LVOEeiCDrvEUVz2Ug"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sme_8LVOEeiCDrvEUVz2Ug" value="1"/>
@@ -286,6 +282,25 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_oYcQ47tjEeiWvNFPxkFrNg" name="iostatus" type="_VnGd0LeqEeiIpI7hu9VsYg" aggregation="composite" association="_oYcQ4LtjEeiWvNFPxkFrNg"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_oYcQ5LtjEeiWvNFPxkFrNg" name="data" type="_-oP8cLepEeiIpI7hu9VsYg" association="_oYcQ4LtjEeiWvNFPxkFrNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yZyU8MsEEeiPc-MYonlOUw" name="Misc">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nJZ68MsGEeiPc-MYonlOUw" general="_wIJSILW-Eeix7r8U1ZxtVA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O9-uMMsFEeiPc-MYonlOUw" name="FlowMeter">
+      <generalization xmi:type="uml:Generalization" xmi:id="_YiyP0MsGEeiPc-MYonlOUw" general="_wIJSILW-Eeix7r8U1ZxtVA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_U92ckMseEeiPc-MYonlOUw" name="RKH_EVT_T"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZuzDEMseEeiPc-MYonlOUw" name="Noria">
+      <generalization xmi:type="uml:Generalization" xmi:id="_j4R0gMseEeiPc-MYonlOUw" general="_rZjNkMseEeiPc-MYonlOUw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_f8IIAMseEeiPc-MYonlOUw" name="Sprayer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_leVzYMseEeiPc-MYonlOUw" general="_rZjNkMseEeiPc-MYonlOUw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rZjNkMseEeiPc-MYonlOUw" name="_SensorData">
+      <generalization xmi:type="uml:Generalization" xmi:id="_QVFsQMsfEeiPc-MYonlOUw" general="_U92ckMseEeiPc-MYonlOUw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8wUFEMseEeiPc-MYonlOUw" name="devId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
