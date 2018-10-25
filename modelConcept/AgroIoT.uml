@@ -1597,8 +1597,8 @@
       <region xmi:type="uml:Region" xmi:id="_NCYZYNfYEeirfc9iqNLHXw" name="Region1">
         <transition xmi:type="uml:Transition" xmi:id="_lW7iYNfYEeirfc9iqNLHXw" source="_V8LEkNfYEeirfc9iqNLHXw" target="_R6pv4NfYEeirfc9iqNLHXw"/>
         <transition xmi:type="uml:Transition" xmi:id="_sZ7jsNfbEeirfc9iqNLHXw" name="EndCycle" source="_R6pv4NfYEeirfc9iqNLHXw" target="_qYhFkNfbEeirfc9iqNLHXw"/>
-        <transition xmi:type="uml:Transition" xmi:id="_x2G4gNfbEeirfc9iqNLHXw" name="[isDetectDevice]/publish0 device data" source="_qYhFkNfbEeirfc9iqNLHXw" target="_vrCIENfbEeirfc9iqNLHXw"/>
-        <transition xmi:type="uml:Transition" xmi:id="_8MY6YNfcEeirfc9iqNLHXw" name="[else]/publish0 NoDev event" source="_qYhFkNfbEeirfc9iqNLHXw" target="_YQTGgNfcEeirfc9iqNLHXw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_x2G4gNfbEeirfc9iqNLHXw" name="[isDetectDevice]/publish device data" source="_qYhFkNfbEeirfc9iqNLHXw" target="_vrCIENfbEeirfc9iqNLHXw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_8MY6YNfcEeirfc9iqNLHXw" name="[else]/publish NoDev event" source="_qYhFkNfbEeirfc9iqNLHXw" target="_YQTGgNfcEeirfc9iqNLHXw"/>
         <transition xmi:type="uml:Transition" xmi:id="_jCgZ8NfeEeirfc9iqNLHXw" name="EndCylce[isDetectDevice]/publish device data" source="_YQTGgNfcEeirfc9iqNLHXw" target="_vrCIENfbEeirfc9iqNLHXw"/>
         <transition xmi:type="uml:Transition" xmi:id="_Sy0p0NffEeirfc9iqNLHXw" name="EndCycle[isNotDetectDevice]/publish NoDev event" source="_vrCIENfbEeirfc9iqNLHXw" target="_YQTGgNfcEeirfc9iqNLHXw"/>
         <subvertex xmi:type="uml:State" xmi:id="_R6pv4NfYEeirfc9iqNLHXw" name="WaitForFirstPollingCycle"/>
