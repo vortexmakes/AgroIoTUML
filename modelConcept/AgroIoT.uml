@@ -1591,6 +1591,31 @@
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_nXzDYWWSEeiax4a4nV9STA" name="Initial3"/>
       </region>
     </packagedElement>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_xHKvYNkOEeiESIJopIcH2Q" name="Collector">
+      <region xmi:type="uml:Region" xmi:id="_0mzfANkOEeiESIJopIcH2Q" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_0IOv0NkSEeiESIJopIcH2Q" source="_xYfzINkSEeiESIJopIcH2Q" target="_ZdiO0NkSEeiESIJopIcH2Q"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ZdiO0NkSEeiESIJopIcH2Q" name="Inactive"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_xYfzINkSEeiESIJopIcH2Q" name="Initial6"/>
+        <subvertex xmi:type="uml:State" xmi:id="_u7G0kNkbEei_DvBod8cFRw" name="Active">
+          <region xmi:type="uml:Region" xmi:id="_yJtektkbEei_DvBod8cFRw" name="Sampling">
+            <transition xmi:type="uml:Transition" xmi:id="_-_9_UNkbEei_DvBod8cFRw" source="_0jD7kNkbEei_DvBod8cFRw" target="_2Rw5ENkbEei_DvBod8cFRw"/>
+            <transition xmi:type="uml:Transition" xmi:id="_CUwJ0NkcEei_DvBod8cFRw" source="_2Rw5ENkbEei_DvBod8cFRw" target="_6jSYoNkbEei_DvBod8cFRw"/>
+            <transition xmi:type="uml:Transition" xmi:id="_FRhc8NkcEei_DvBod8cFRw" source="_6jSYoNkbEei_DvBod8cFRw" target="_2Rw5ENkbEei_DvBod8cFRw"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_0jD7kNkbEei_DvBod8cFRw" name="Initial1"/>
+            <subvertex xmi:type="uml:State" xmi:id="_2Rw5ENkbEei_DvBod8cFRw" name="NotWorking"/>
+            <subvertex xmi:type="uml:State" xmi:id="_6jSYoNkbEei_DvBod8cFRw" name="Working"/>
+          </region>
+          <region xmi:type="uml:Region" xmi:id="_zmio8NkbEei_DvBod8cFRw" name="Sensoring">
+            <transition xmi:type="uml:Transition" xmi:id="_ANPqwNkcEei_DvBod8cFRw" source="_09J2kNkbEei_DvBod8cFRw" target="_2roxoNkbEei_DvBod8cFRw"/>
+            <transition xmi:type="uml:Transition" xmi:id="_Gc98YNkcEei_DvBod8cFRw" source="_74a_kNkbEei_DvBod8cFRw" target="_2roxoNkbEei_DvBod8cFRw"/>
+            <transition xmi:type="uml:Transition" xmi:id="_HQTd0NkcEei_DvBod8cFRw" source="_2roxoNkbEei_DvBod8cFRw" target="_74a_kNkbEei_DvBod8cFRw"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_09J2kNkbEei_DvBod8cFRw" name="Initial1"/>
+            <subvertex xmi:type="uml:State" xmi:id="_2roxoNkbEei_DvBod8cFRw" name="DevNotConnected"/>
+            <subvertex xmi:type="uml:State" xmi:id="_74a_kNkbEei_DvBod8cFRw" name="DevConnected"/>
+          </region>
+        </subvertex>
+      </region>
+    </packagedElement>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4FlS8FhtEeiniPlogmuNzQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4FnvMFhtEeiniPlogmuNzQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
