@@ -639,15 +639,15 @@
         <when xmi:type="uml:TimeExpression" xmi:id="_pIOtUOHqEeiE9KDw0vtNSg">
           <expr xmi:type="uml:OpaqueExpression" xmi:id="_pIOtUeHqEeiE9KDw0vtNSg">
             <language>C</language>
-            <body>STORE_DATA_TIME</body>
+            <body>STORE_DATA_RUNNING_TIME</body>
           </expr>
         </when>
       </packagedElement>
-      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_NIFm4OHrEeiE9KDw0vtNSg" name="evStoreDataToutStopped" isRelative="true">
+      <packagedElement xmi:type="uml:TimeEvent" xmi:id="_NIFm4OHrEeiE9KDw0vtNSg" name="evSyncDirTout" isRelative="true">
         <when xmi:type="uml:TimeExpression" xmi:id="_ZU468OHrEeiE9KDw0vtNSg">
           <expr xmi:type="uml:OpaqueExpression" xmi:id="_ZU468eHrEeiE9KDw0vtNSg">
             <language>C</language>
-            <body>SYNC_DIR_TIME</body>
+            <body>STORE_DATA_STOPPED_TIME</body>
           </expr>
         </when>
       </packagedElement>
@@ -1723,7 +1723,7 @@
           </region>
           <region xmi:type="uml:Region" xmi:id="_zmio8NkbEei_DvBod8cFRw" name="Sampling">
             <transition xmi:type="uml:Transition" xmi:id="_ANPqwNkcEei_DvBod8cFRw" source="_09J2kNkbEei_DvBod8cFRw" target="_2roxoNkbEei_DvBod8cFRw"/>
-            <transition xmi:type="uml:Transition" xmi:id="_Gc98YNkcEei_DvBod8cFRw" source="_74a_kNkbEei_DvBod8cFRw" target="_2roxoNkbEei_DvBod8cFRw">
+            <transition xmi:type="uml:Transition" xmi:id="_Gc98YNkcEei_DvBod8cFRw" source="_74a_kNkbEei_DvBod8cFRw" target="_BtF_oOKuEeiE9KDw0vtNSg">
               <trigger xmi:type="uml:Trigger" xmi:id="_7ae5gOHmEeiE9KDw0vtNSg" event="_ScIa0OEkEeiE9KDw0vtNSg"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_ylQlQOHmEeiE9KDw0vtNSg" source="_2roxoNkbEei_DvBod8cFRw" target="_74a_kNkbEei_DvBod8cFRw">
@@ -1769,10 +1769,31 @@
                 </specification>
               </ownedRule>
             </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_KJGioOKuEeiE9KDw0vtNSg" guard="_VlDBgOKuEeiE9KDw0vtNSg" source="_BtF_oOKuEeiE9KDw0vtNSg" target="_2roxoNkbEei_DvBod8cFRw">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_VlDBgOKuEeiE9KDw0vtNSg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_YWMTcOKuEeiE9KDw0vtNSg">
+                  <language>C</language>
+                  <body>isSyncDirToStopped()</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nZ48IOKuEeiE9KDw0vtNSg">
+                <language>C</language>
+                <body>syncDir()</body>
+              </effect>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_LI5ywOKuEeiE9KDw0vtNSg" guard="_ptFt0OKuEeiE9KDw0vtNSg" source="_BtF_oOKuEeiE9KDw0vtNSg" target="_2roxoNkbEei_DvBod8cFRw">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ptFt0OKuEeiE9KDw0vtNSg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_rK8L4OKuEeiE9KDw0vtNSg">
+                  <language>C</language>
+                  <body>else</body>
+                </specification>
+              </ownedRule>
+            </transition>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_09J2kNkbEei_DvBod8cFRw" name="I3"/>
             <subvertex xmi:type="uml:State" xmi:id="_2roxoNkbEei_DvBod8cFRw" name="Stopped"/>
             <subvertex xmi:type="uml:State" xmi:id="_74a_kNkbEei_DvBod8cFRw" name="Running"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_6P_DAOHrEeiE9KDw0vtNSg" name="C9" kind="choice"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_BtF_oOKuEeiE9KDw0vtNSg" name="C12" kind="choice"/>
           </region>
         </subvertex>
       </region>
