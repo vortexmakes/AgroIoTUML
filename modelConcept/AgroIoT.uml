@@ -1662,64 +1662,58 @@
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_xYfzINkSEeiESIJopIcH2Q" name="I1"/>
         <subvertex xmi:type="uml:State" xmi:id="_u7G0kNkbEei_DvBod8cFRw" name="Active">
           <region xmi:type="uml:Region" xmi:id="_yJtektkbEei_DvBod8cFRw" name="Sensoring">
-            <transition xmi:type="uml:Transition" xmi:id="_-_9_UNkbEei_DvBod8cFRw" source="_0jD7kNkbEei_DvBod8cFRw" target="_sJHBQOEiEeiE9KDw0vtNSg"/>
             <transition xmi:type="uml:Transition" xmi:id="_CUwJ0NkcEei_DvBod8cFRw" source="_uDtFsOEiEeiE9KDw0vtNSg" target="_vMtVIOEiEeiE9KDw0vtNSg">
               <effect xmi:type="uml:OpaqueBehavior" xmi:id="_NcdtwOEiEeiE9KDw0vtNSg" name="processDevData">
                 <language>C</language>
-                <body>testDev() </body>
+                <body>updateDevData() </body>
               </effect>
               <trigger xmi:type="uml:Trigger" xmi:id="_Gd8ccOEiEeiE9KDw0vtNSg" name="evDevData" event="_C6wCgOEiEeiE9KDw0vtNSg"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_UvwYYOEmEeiE9KDw0vtNSg" kind="internal" source="_uDtFsOEiEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg">
               <effect xmi:type="uml:OpaqueBehavior" xmi:id="_n6ERIOEmEeiE9KDw0vtNSg">
                 <language>C</language>
-                <body>digInDevNull()</body>
+                <body>updateDigInDevNull()</body>
               </effect>
               <trigger xmi:type="uml:Trigger" xmi:id="_gLW5AOEmEeiE9KDw0vtNSg" name="evDigInChanged" event="_gCssQOEmEeiE9KDw0vtNSg"/>
             </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_dyPP0OHGEeiE9KDw0vtNSg" source="_vMtVIOEiEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_4X8GoOHHEeiE9KDw0vtNSg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_6c8EQOHHEeiE9KDw0vtNSg">
+                  <language>C</language>
+                  <body>isJobCond()</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_opXU8OHHEeiE9KDw0vtNSg">
+                <language>C</language>
+                <body>testDevNull() </body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_NrNe4OHnEeiE9KDw0vtNSg" event="_uVK24OEnEeiE9KDw0vtNSg"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_dDw9QOHnEeiE9KDw0vtNSg" kind="internal" source="_vMtVIOEiEeiE9KDw0vtNSg" target="_vMtVIOEiEeiE9KDw0vtNSg">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_hPRUYOHnEeiE9KDw0vtNSg">
+                <language>C</language>
+                <body>updateDevData() </body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_efWKcOHnEeiE9KDw0vtNSg" event="_C6wCgOEiEeiE9KDw0vtNSg"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_-TqbMOHoEeiE9KDw0vtNSg" kind="internal" source="_vMtVIOEiEeiE9KDw0vtNSg" target="_vMtVIOEiEeiE9KDw0vtNSg">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_EVsPEOHpEeiE9KDw0vtNSg">
+                <language>C</language>
+                <body>updateDigInData()</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="__1T0IOHoEeiE9KDw0vtNSg" event="_gCssQOEmEeiE9KDw0vtNSg"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_ormjEOHnEeiE9KDw0vtNSg" kind="internal" source="_uDtFsOEiEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_tXj74OHnEeiE9KDw0vtNSg">
+                <language>C</language>
+                <body>updateDevNull() </body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_qWnTYOHnEeiE9KDw0vtNSg" event="_uVK24OEnEeiE9KDw0vtNSg"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_XQenkOK5EeiE9KDw0vtNSg" source="_0jD7kNkbEei_DvBod8cFRw" target="_uDtFsOEiEeiE9KDw0vtNSg"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_0jD7kNkbEei_DvBod8cFRw" name="I2"/>
-            <subvertex xmi:type="uml:State" xmi:id="_sJHBQOEiEeiE9KDw0vtNSg" name="Sampling">
-              <region xmi:type="uml:Region" xmi:id="_uDo0QOEiEeiE9KDw0vtNSg" name="Region1">
-                <transition xmi:type="uml:Transition" xmi:id="_V6QkAOEjEeiE9KDw0vtNSg" source="_SVDX4OEjEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg"/>
-                <transition xmi:type="uml:Transition" xmi:id="_dyPP0OHGEeiE9KDw0vtNSg" source="_vMtVIOEiEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg">
-                  <ownedRule xmi:type="uml:Constraint" xmi:id="_4X8GoOHHEeiE9KDw0vtNSg">
-                    <specification xmi:type="uml:OpaqueExpression" xmi:id="_6c8EQOHHEeiE9KDw0vtNSg">
-                      <language>C</language>
-                      <body>isJobCond()</body>
-                    </specification>
-                  </ownedRule>
-                  <effect xmi:type="uml:OpaqueBehavior" xmi:id="_opXU8OHHEeiE9KDw0vtNSg">
-                    <language>C</language>
-                    <body>testDevNull()</body>
-                  </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_NrNe4OHnEeiE9KDw0vtNSg" event="_uVK24OEnEeiE9KDw0vtNSg"/>
-                </transition>
-                <transition xmi:type="uml:Transition" xmi:id="_dDw9QOHnEeiE9KDw0vtNSg" kind="internal" source="_vMtVIOEiEeiE9KDw0vtNSg" target="_vMtVIOEiEeiE9KDw0vtNSg">
-                  <effect xmi:type="uml:OpaqueBehavior" xmi:id="_hPRUYOHnEeiE9KDw0vtNSg">
-                    <language>C</language>
-                    <body>testDev()</body>
-                  </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_efWKcOHnEeiE9KDw0vtNSg" event="_C6wCgOEiEeiE9KDw0vtNSg"/>
-                </transition>
-                <transition xmi:type="uml:Transition" xmi:id="_ormjEOHnEeiE9KDw0vtNSg" kind="internal" source="_uDtFsOEiEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg">
-                  <effect xmi:type="uml:OpaqueBehavior" xmi:id="_tXj74OHnEeiE9KDw0vtNSg">
-                    <language>C</language>
-                    <body>testNullDev()</body>
-                  </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_qWnTYOHnEeiE9KDw0vtNSg" event="_uVK24OEnEeiE9KDw0vtNSg"/>
-                </transition>
-                <transition xmi:type="uml:Transition" xmi:id="_-TqbMOHoEeiE9KDw0vtNSg" kind="internal" source="_vMtVIOEiEeiE9KDw0vtNSg" target="_vMtVIOEiEeiE9KDw0vtNSg">
-                  <effect xmi:type="uml:OpaqueBehavior" xmi:id="_EVsPEOHpEeiE9KDw0vtNSg">
-                    <language>C</language>
-                    <body>updateDigInData()</body>
-                  </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="__1T0IOHoEeiE9KDw0vtNSg" event="_gCssQOEmEeiE9KDw0vtNSg"/>
-                </transition>
-                <subvertex xmi:type="uml:State" xmi:id="_uDtFsOEiEeiE9KDw0vtNSg" name="DevNotConnected"/>
-                <subvertex xmi:type="uml:State" xmi:id="_vMtVIOEiEeiE9KDw0vtNSg" name="DevConnected"/>
-                <subvertex xmi:type="uml:Pseudostate" xmi:id="_SVDX4OEjEeiE9KDw0vtNSg" name="I3"/>
-              </region>
-            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_vMtVIOEiEeiE9KDw0vtNSg" name="DevConnected"/>
+            <subvertex xmi:type="uml:State" xmi:id="_uDtFsOEiEeiE9KDw0vtNSg" name="DevNotConnected"/>
           </region>
           <region xmi:type="uml:Region" xmi:id="_zmio8NkbEei_DvBod8cFRw" name="Sampling">
             <transition xmi:type="uml:Transition" xmi:id="_ANPqwNkcEei_DvBod8cFRw" source="_09J2kNkbEei_DvBod8cFRw" target="_2roxoNkbEei_DvBod8cFRw"/>
