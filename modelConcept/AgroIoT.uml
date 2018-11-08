@@ -190,6 +190,12 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_p8RlwLW-Eeix7r8U1ZxtVA" name="IOStatus">
       <generalization xmi:type="uml:Generalization" xmi:id="_4cGsYLW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CTlrwONaEeiE9KDw0vtNSg" name="input">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_In2fIONaEeiE9KDw0vtNSg" name="output">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_wIJSILW-Eeix7r8U1ZxtVA" name="SensorData">
       <generalization xmi:type="uml:Generalization" xmi:id="_5q6o4LW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
@@ -296,6 +302,12 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DUE6wOEdEeiE9KDw0vtNSg" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="cbox_str" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VPs30ONXEeiE9KDw0vtNSg" name="RKHEvt"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_b_qvwONXEeiE9KDw0vtNSg" name="EvtGeoStamp">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nP_NcONXEeiE9KDw0vtNSg" general="_VPs30ONXEeiE9KDw0vtNSg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tNu-QONXEeiE9KDw0vtNSg" name="geoStamp" type="_9_QBULW9Eeix7r8U1ZxtVA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mfRswONYEeiE9KDw0vtNSg" name="ioStatus" type="_p8RlwLW-Eeix7r8U1ZxtVA"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
@@ -651,6 +663,12 @@
           </expr>
         </when>
       </packagedElement>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_nMlNwONPEeiE9KDw0vtNSg" name="evGeoStamp"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_nVkKoONPEeiE9KDw0vtNSg" name="evGeoStamp" signal="_nMlNwONPEeiE9KDw0vtNSg"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_e68VcONUEeiE9KDw0vtNSg" name="evGeoError"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_fFO54ONUEeiE9KDw0vtNSg" name="evGeoError" signal="_e68VcONUEeiE9KDw0vtNSg"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_tRXocONUEeiE9KDw0vtNSg" name="evGeoReady"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ta3isONUEeiE9KDw0vtNSg" name="evGeoReady" signal="_tRXocONUEeiE9KDw0vtNSg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_i1rp0FRTEeiBd_DXg33BBQ" name="ConMgr">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_yA2HgFioEeiQLo5rqCRH8w">
@@ -1656,8 +1674,12 @@
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_xHKvYNkOEeiESIJopIcH2Q" name="Collector">
       <region xmi:type="uml:Region" xmi:id="_0mzfANkOEeiESIJopIcH2Q" name="Region1">
         <transition xmi:type="uml:Transition" xmi:id="_0IOv0NkSEeiESIJopIcH2Q" source="_xYfzINkSEeiESIJopIcH2Q" target="_ZdiO0NkSEeiESIJopIcH2Q"/>
-        <transition xmi:type="uml:Transition" xmi:id="_CBKzUOEbEeiE9KDw0vtNSg" source="_ZdiO0NkSEeiESIJopIcH2Q" target="_u7G0kNkbEei_DvBod8cFRw"/>
-        <transition xmi:type="uml:Transition" xmi:id="_DLppcOEbEeiE9KDw0vtNSg" source="_u7G0kNkbEei_DvBod8cFRw" target="_ZdiO0NkSEeiESIJopIcH2Q"/>
+        <transition xmi:type="uml:Transition" xmi:id="_CBKzUOEbEeiE9KDw0vtNSg" source="_ZdiO0NkSEeiESIJopIcH2Q" target="_u7G0kNkbEei_DvBod8cFRw">
+          <trigger xmi:type="uml:Trigger" xmi:id="_tod50ONUEeiE9KDw0vtNSg" name="evGeoReady" event="_ta3isONUEeiE9KDw0vtNSg"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_DLppcOEbEeiE9KDw0vtNSg" source="_u7G0kNkbEei_DvBod8cFRw" target="_ZdiO0NkSEeiESIJopIcH2Q">
+          <trigger xmi:type="uml:Trigger" xmi:id="_fNdo0ONUEeiE9KDw0vtNSg" name="evGeoError" event="_fFO54ONUEeiE9KDw0vtNSg"/>
+        </transition>
         <subvertex xmi:type="uml:State" xmi:id="_ZdiO0NkSEeiESIJopIcH2Q" name="Inactive"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_xYfzINkSEeiESIJopIcH2Q" name="I1"/>
         <subvertex xmi:type="uml:State" xmi:id="_u7G0kNkbEei_DvBod8cFRw" name="Active">
@@ -1711,6 +1733,20 @@
               <trigger xmi:type="uml:Trigger" xmi:id="_qWnTYOHnEeiE9KDw0vtNSg" event="_uVK24OEnEeiE9KDw0vtNSg"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_XQenkOK5EeiE9KDw0vtNSg" source="_0jD7kNkbEei_DvBod8cFRw" target="_uDtFsOEiEeiE9KDw0vtNSg"/>
+            <transition xmi:type="uml:Transition" xmi:id="_d4NfYONPEeiE9KDw0vtNSg" kind="internal" source="_uDtFsOEiEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_uqYcEONPEeiE9KDw0vtNSg">
+                <language>C</language>
+                <body>updateGeoData()</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_n5QtkONPEeiE9KDw0vtNSg" name="evGeoStamp" event="_nVkKoONPEeiE9KDw0vtNSg"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_zYiNQONPEeiE9KDw0vtNSg" kind="internal" source="_vMtVIOEiEeiE9KDw0vtNSg" target="_vMtVIOEiEeiE9KDw0vtNSg">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_9oVpIONPEeiE9KDw0vtNSg">
+                <language>C</language>
+                <body>updateGeoData()</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_5YBDcONPEeiE9KDw0vtNSg" name="evGeoStamp" event="_nVkKoONPEeiE9KDw0vtNSg"/>
+            </transition>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_0jD7kNkbEei_DvBod8cFRw" name="I2"/>
             <subvertex xmi:type="uml:State" xmi:id="_vMtVIOEiEeiE9KDw0vtNSg" name="DevConnected"/>
             <subvertex xmi:type="uml:State" xmi:id="_uDtFsOEiEeiE9KDw0vtNSg" name="DevNotConnected"/>
