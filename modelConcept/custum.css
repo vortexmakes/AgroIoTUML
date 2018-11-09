@@ -10,6 +10,10 @@ Transition {
 	roundedBendpointsRadius: 5;
 }
 
+Generalization {
+	routing: Rectilinear;
+}
+
 State > OpaqueBehavior {
 	bodyCutLength: 4;
 	indicateParameters: true;
