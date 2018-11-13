@@ -279,7 +279,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUETseEdEeiE9KDw0vtNSg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DUE6wOEdEeiE9KDw0vtNSg" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="cbox_str" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="cBox" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_VPs30ONXEeiE9KDw0vtNSg" name="RKHEvt"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_b_qvwONXEeiE9KDw0vtNSg" name="EvtGeoStamp">
@@ -318,6 +318,15 @@
     <packagedElement xmi:type="uml:Realization" xmi:id="_H0hVsOc0EeiE9KDw0vtNSg" client="_Du7ZUOc0EeiE9KDw0vtNSg" supplier="_-oP8cLepEeiIpI7hu9VsYg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_dhZR0Oc0EeiE9KDw0vtNSg" name="SamplerJobCond"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_hYs6kOc0EeiE9KDw0vtNSg" client="_dhZR0Oc0EeiE9KDw0vtNSg" supplier="_VnGd0LeqEeiIpI7hu9VsYg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iI0VoOdEEeiE9KDw0vtNSg" name="DevNull"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_q8TkgOdEEeiE9KDw0vtNSg" client="_iI0VoOdEEeiE9KDw0vtNSg" supplier="_-oP8cLepEeiIpI7hu9VsYg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3NWfYOdEEeiE9KDw0vtNSg" name="DevNullJobCond">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BtrOEOdGEei_rN11x4-KBA" name="matchInput">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_PSkWcOdGEei_rN11x4-KBA" value="3"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_-icoMOdFEei_rN11x4-KBA" client="_3NWfYOdEEeiE9KDw0vtNSg" supplier="_VnGd0LeqEeiIpI7hu9VsYg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_Hs4wUFLOEei-ps2IrsePSA" name="ModMgr">
