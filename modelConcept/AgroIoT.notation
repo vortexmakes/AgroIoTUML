@@ -3131,32 +3131,6 @@
       <element xmi:type="uml:Class" href="AgroIoT.uml#_WpqiELW9Eeix7r8U1ZxtVA"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WpwosbW9Eeix7r8U1ZxtVA" x="1060" y="-200" width="101" height="61"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_9_QBUbW9Eeix7r8U1ZxtVA" type="Class_Shape">
-      <children xmi:type="notation:DecorationNode" xmi:id="_9_QBU7W9Eeix7r8U1ZxtVA" type="Class_NameLabel"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_9_QBVLW9Eeix7r8U1ZxtVA" type="Class_FloatingNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_9_QBVbW9Eeix7r8U1ZxtVA" y="15"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_9_QBVrW9Eeix7r8U1ZxtVA" visible="false" type="Class_AttributeCompartment">
-        <styles xmi:type="notation:TitleStyle" xmi:id="_9_QBV7W9Eeix7r8U1ZxtVA"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_9_QBWLW9Eeix7r8U1ZxtVA"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_9_QBWbW9Eeix7r8U1ZxtVA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBWrW9Eeix7r8U1ZxtVA"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_9_QBW7W9Eeix7r8U1ZxtVA" visible="false" type="Class_OperationCompartment">
-        <styles xmi:type="notation:TitleStyle" xmi:id="_9_QBXLW9Eeix7r8U1ZxtVA"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_9_QBXbW9Eeix7r8U1ZxtVA"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_9_QBXrW9Eeix7r8U1ZxtVA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBX7W9Eeix7r8U1ZxtVA"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_9_QBYLW9Eeix7r8U1ZxtVA" visible="false" type="Class_NestedClassifierCompartment">
-        <styles xmi:type="notation:TitleStyle" xmi:id="_9_QBYbW9Eeix7r8U1ZxtVA"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_9_QBYrW9Eeix7r8U1ZxtVA"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_9_QBY7W9Eeix7r8U1ZxtVA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBZLW9Eeix7r8U1ZxtVA"/>
-      </children>
-      <element xmi:type="uml:Class" href="AgroIoT.uml#_9_QBULW9Eeix7r8U1ZxtVA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBUrW9Eeix7r8U1ZxtVA" x="1060" y="40" width="101" height="61"/>
-    </children>
     <children xmi:type="notation:Shape" xmi:id="_p8RlwbW-Eeix7r8U1ZxtVA" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_p8Rlw7W-Eeix7r8U1ZxtVA" type="Class_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_p8RlxLW-Eeix7r8U1ZxtVA" type="Class_FloatingNameLabel">
@@ -3254,7 +3228,18 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_hbOzsdFHEeiESIJopIcH2Q" type="Class_FloatingNameLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_hbOzstFHEeiESIJopIcH2Q" y="15"/>
       </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_hbOzs9FHEeiESIJopIcH2Q" visible="false" type="Class_AttributeCompartment">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_hbOzs9FHEeiESIJopIcH2Q" type="Class_AttributeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SluHEOc3EeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SluHEec3EeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_VP7DgOc3EeiE9KDw0vtNSg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="AgroIoT.uml#_VPVNoOc3EeiE9KDw0vtNSg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_VP7Dgec3EeiE9KDw0vtNSg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_YfxqsOc3EeiE9KDw0vtNSg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="AgroIoT.uml#_YfLNwOc3EeiE9KDw0vtNSg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Yfxqsec3EeiE9KDw0vtNSg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_hbOztNFHEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_hbOztdFHEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_hbOzttFHEeiESIJopIcH2Q"/>
@@ -3273,14 +3258,25 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hbPaxNFHEeiESIJopIcH2Q"/>
       </children>
       <element xmi:type="uml:Class" href="AgroIoT.uml#_hbFCsNFHEeiESIJopIcH2Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hbOModFHEeiESIJopIcH2Q" x="840" y="440" width="81" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hbOModFHEeiESIJopIcH2Q" x="740" y="520" width="161" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_lSmG0NFHEeiESIJopIcH2Q" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_lSmG0tFHEeiESIJopIcH2Q" type="Class_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_lSmG09FHEeiESIJopIcH2Q" type="Class_FloatingNameLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_lSmG1NFHEeiESIJopIcH2Q" y="15"/>
       </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_lSmt4NFHEeiESIJopIcH2Q" visible="false" type="Class_AttributeCompartment">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_lSmt4NFHEeiESIJopIcH2Q" type="Class_AttributeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bVukIOc3EeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bVukIec3EeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_buu6AOc3EeiE9KDw0vtNSg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="AgroIoT.uml#_buJEIOc3EeiE9KDw0vtNSg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_buu6Aec3EeiE9KDw0vtNSg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_eSSb4Oc3EeiE9KDw0vtNSg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="AgroIoT.uml#_eRyFkOc3EeiE9KDw0vtNSg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_eSSb4ec3EeiE9KDw0vtNSg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_lSmt4dFHEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_lSmt4tFHEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_lSmt49FHEeiESIJopIcH2Q"/>
@@ -3299,14 +3295,21 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lSmt7tFHEeiESIJopIcH2Q"/>
       </children>
       <element xmi:type="uml:Class" href="AgroIoT.uml#_lSkRoNFHEeiESIJopIcH2Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lSmG0dFHEeiESIJopIcH2Q" x="940" y="440" width="81" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lSmG0dFHEeiESIJopIcH2Q" x="860" y="440" width="161" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_kuoQgNIrEeiESIJopIcH2Q" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_kuqFsNIrEeiESIJopIcH2Q" type="Class_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_kuqFsdIrEeiESIJopIcH2Q" type="Class_FloatingNameLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_kuqFstIrEeiESIJopIcH2Q" y="15"/>
       </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_kuqswNIrEeiESIJopIcH2Q" visible="false" type="Class_AttributeCompartment">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_kuqswNIrEeiESIJopIcH2Q" type="Class_AttributeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_womr4Oc3EeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_womr4ec3EeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_w9pHwOc3EeiE9KDw0vtNSg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="AgroIoT.uml#_w8_AcOc3EeiE9KDw0vtNSg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_w9pHwec3EeiE9KDw0vtNSg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_kuqswdIrEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_kuqswtIrEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_kuqsw9IrEeiESIJopIcH2Q"/>
@@ -3325,14 +3328,21 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kuqsztIrEeiESIJopIcH2Q"/>
       </children>
       <element xmi:type="uml:Class" href="AgroIoT.uml#_kuftoNIrEeiESIJopIcH2Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kuoQgdIrEeiESIJopIcH2Q" x="1040" y="440" width="121" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kuoQgdIrEeiESIJopIcH2Q" x="1040" y="440" width="181" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_o5ZAwNIrEeiESIJopIcH2Q" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_o5ZAwtIrEeiESIJopIcH2Q" type="Class_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_o5ZAw9IrEeiESIJopIcH2Q" type="Class_FloatingNameLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_o5ZAxNIrEeiESIJopIcH2Q" y="15"/>
       </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_o5Zn0NIrEeiESIJopIcH2Q" visible="false" type="Class_AttributeCompartment">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_o5Zn0NIrEeiESIJopIcH2Q" type="Class_AttributeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n8hskOc3EeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n8hskec3EeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_omjhAOc3EeiE9KDw0vtNSg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="AgroIoT.uml#_ol6AwOc3EeiE9KDw0vtNSg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_omjhAec3EeiE9KDw0vtNSg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_o5Zn0dIrEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_o5Zn0tIrEeiESIJopIcH2Q"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_o5Zn09IrEeiESIJopIcH2Q"/>
@@ -3351,7 +3361,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o5Zn3tIrEeiESIJopIcH2Q"/>
       </children>
       <element xmi:type="uml:Class" href="AgroIoT.uml#_o5XyoNIrEeiESIJopIcH2Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o5ZAwdIrEeiESIJopIcH2Q" x="1180" y="440" width="121" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o5ZAwdIrEeiESIJopIcH2Q" x="1180" y="520" width="201" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_emYDwOEcEeiE9KDw0vtNSg" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_emZR4OEcEeiE9KDw0vtNSg" type="Class_NameLabel"/>
@@ -3378,6 +3388,91 @@
       </children>
       <element xmi:type="uml:Class" href="AgroIoT.uml#_emBecOEcEeiE9KDw0vtNSg"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_emYDweEcEeiE9KDw0vtNSg" x="1420" y="-200" width="81" height="61"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Du7ZUec0EeiE9KDw0vtNSg" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Du7ZU-c0EeiE9KDw0vtNSg" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Du7ZVOc0EeiE9KDw0vtNSg" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Du7ZVec0EeiE9KDw0vtNSg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Du7ZVuc0EeiE9KDw0vtNSg" type="Class_AttributeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-PoCkOc0EeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-PoCkec0EeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_-s50cOc0EeiE9KDw0vtNSg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="AgroIoT.uml#_-sVMsOc0EeiE9KDw0vtNSg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-s50cec0EeiE9KDw0vtNSg"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Du7ZV-c0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Du7ZWOc0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Du7ZWec0EeiE9KDw0vtNSg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Du7ZWuc0EeiE9KDw0vtNSg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Du7ZW-c0EeiE9KDw0vtNSg" visible="false" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Du7ZXOc0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Du7ZXec0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Du7ZXuc0EeiE9KDw0vtNSg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Du7ZX-c0EeiE9KDw0vtNSg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Du7ZYOc0EeiE9KDw0vtNSg" visible="false" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Du7ZYec0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Du7ZYuc0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Du7ZY-c0EeiE9KDw0vtNSg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Du7ZZOc0EeiE9KDw0vtNSg"/>
+      </children>
+      <element xmi:type="uml:Class" href="AgroIoT.uml#_Du7ZUOc0EeiE9KDw0vtNSg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Du7ZUuc0EeiE9KDw0vtNSg" x="680" y="440" width="141" height="61"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_dhZR0ec0EeiE9KDw0vtNSg" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_dhZR0-c0EeiE9KDw0vtNSg" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_dhZR1Oc0EeiE9KDw0vtNSg" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_dhZR1ec0EeiE9KDw0vtNSg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_dhZR1uc0EeiE9KDw0vtNSg" visible="false" type="Class_AttributeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_dhZR1-c0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_dhZR2Oc0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_dhZR2ec0EeiE9KDw0vtNSg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dhZR2uc0EeiE9KDw0vtNSg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_dhZR2-c0EeiE9KDw0vtNSg" visible="false" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_dhZR3Oc0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_dhZR3ec0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_dhZR3uc0EeiE9KDw0vtNSg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dhZR3-c0EeiE9KDw0vtNSg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_dhZR4Oc0EeiE9KDw0vtNSg" visible="false" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_dhZR4ec0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_dhZR4uc0EeiE9KDw0vtNSg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_dhZR4-c0EeiE9KDw0vtNSg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dhZR5Oc0EeiE9KDw0vtNSg"/>
+      </children>
+      <element xmi:type="uml:Class" href="AgroIoT.uml#_dhZR0Oc0EeiE9KDw0vtNSg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dhZR0uc0EeiE9KDw0vtNSg" x="1260" y="440" width="121" height="61"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_9_QBUbW9Eeix7r8U1ZxtVA" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_9_QBU7W9Eeix7r8U1ZxtVA" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9_QBVLW9Eeix7r8U1ZxtVA" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9_QBVbW9Eeix7r8U1ZxtVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9_QBVrW9Eeix7r8U1ZxtVA" visible="false" type="Class_AttributeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9_QBV7W9Eeix7r8U1ZxtVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9_QBWLW9Eeix7r8U1ZxtVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9_QBWbW9Eeix7r8U1ZxtVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBWrW9Eeix7r8U1ZxtVA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9_QBW7W9Eeix7r8U1ZxtVA" visible="false" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9_QBXLW9Eeix7r8U1ZxtVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9_QBXbW9Eeix7r8U1ZxtVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9_QBXrW9Eeix7r8U1ZxtVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBX7W9Eeix7r8U1ZxtVA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9_QBYLW9Eeix7r8U1ZxtVA" visible="false" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9_QBYbW9Eeix7r8U1ZxtVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9_QBYrW9Eeix7r8U1ZxtVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9_QBY7W9Eeix7r8U1ZxtVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBZLW9Eeix7r8U1ZxtVA"/>
+      </children>
+      <element xmi:type="uml:Class" href="AgroIoT.uml#_9_QBULW9Eeix7r8U1ZxtVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9_QBUrW9Eeix7r8U1ZxtVA" x="1060" y="40" width="101" height="61"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_sL4bkVdxEeia3PgQtXbrog" name="diagram_compatibility_version" stringValue="1.3.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_sL4bkldxEeia3PgQtXbrog"/>
@@ -3961,17 +4056,23 @@
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_WykUgLW_Eeix7r8U1ZxtVA" name="IS_UPDATED_POSITION" booleanValue="true"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_BCLKWLW_Eeix7r8U1ZxtVA" x="12" y="-20"/>
       </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_BCLKWbW_Eeix7r8U1ZxtVA" visible="false" type="Association_SourceRoleLabel">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BCLKWbW_Eeix7r8U1ZxtVA" type="Association_SourceRoleLabel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8LR5UOdBEeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8LR5UedBEeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_WzAZYLW_Eeix7r8U1ZxtVA" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_BCLKWrW_Eeix7r8U1ZxtVA" x="-12" y="20"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BCLKWrW_Eeix7r8U1ZxtVA" x="-32" y="7"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_BCLKW7W_Eeix7r8U1ZxtVA" visible="false" type="Association_SourceMultiplicityLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Wze6gLW_Eeix7r8U1ZxtVA" name="IS_UPDATED_POSITION" booleanValue="true"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_BCLKXLW_Eeix7r8U1ZxtVA" x="12" y="20"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_BCLKXbW_Eeix7r8U1ZxtVA" visible="false" type="Association_TargetMultiplicityLabel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AUApQOdCEeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AUApQedCEeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Wz_Q0LW_Eeix7r8U1ZxtVA" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_BCLKXrW_Eeix7r8U1ZxtVA" x="-12" y="-20"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BCLKXrW_Eeix7r8U1ZxtVA" x="-9" y="-13"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_BCLKUbW_Eeix7r8U1ZxtVA"/>
       <element xmi:type="uml:Association" href="AgroIoT.uml#_BBcKgLW_Eeix7r8U1ZxtVA"/>
@@ -4047,6 +4148,9 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Gs_PcdFHEeiESIJopIcH2Q" y="-20"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_Gs_PctFHEeiESIJopIcH2Q" visible="false" type="Association_NameLabel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nMw4AOdBEeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nMw4AedBEeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_9PiaoOacEeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Gs_2gNFHEeiESIJopIcH2Q" y="20"/>
       </children>
@@ -4054,9 +4158,12 @@
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_9QD_EOacEeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Gs_2gtFHEeiESIJopIcH2Q" x="45" y="-20"/>
       </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_Gs_2g9FHEeiESIJopIcH2Q" visible="false" type="Association_SourceRoleLabel">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Gs_2g9FHEeiESIJopIcH2Q" type="Association_SourceRoleLabel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5ubcYOdBEeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5ucDcOdBEeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_9QjuUOacEeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_Gs_2hNFHEeiESIJopIcH2Q" x="-45" y="20"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Gs_2hNFHEeiESIJopIcH2Q" x="-13" y="24"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_Gs_2hdFHEeiESIJopIcH2Q" visible="false" type="Association_SourceMultiplicityLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_9RLZYOacEeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -4083,9 +4190,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_p2QfQdFHEeiESIJopIcH2Q"/>
       <element xmi:type="uml:Realization" href="AgroIoT.uml#_p2KYoNFHEeiESIJopIcH2Q"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_p2QfQtFHEeiESIJopIcH2Q" points="[860, 440, -643984, -643984]$[860, 419, -643984, -643984]$[920, 419, -643984, -643984]$[920, 381, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_p4PcQNFHEeiESIJopIcH2Q" id="(0.49382716049382713,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_p4QDUNFHEeiESIJopIcH2Q" id="(0.39603960396039606,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_p2QfQtFHEeiESIJopIcH2Q" points="[840, 520, -643984, -643984]$[840, 420, -643984, -643984]$[960, 420, -643984, -643984]$[960, 381, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_p4PcQNFHEeiESIJopIcH2Q" id="(0.6211180124223602,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_p4QDUNFHEeiESIJopIcH2Q" id="(0.7920792079207921,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_r6jSQNFHEeiESIJopIcH2Q" type="Realization_Edge" source="_lSmG0NFHEeiESIJopIcH2Q" target="_-oSYsLepEeiIpI7hu9VsYg" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_r6j5UNFHEeiESIJopIcH2Q" type="Realization_StereotypeLabel">
@@ -4098,9 +4205,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_r6jSQdFHEeiESIJopIcH2Q"/>
       <element xmi:type="uml:Realization" href="AgroIoT.uml#_r6gO8NFHEeiESIJopIcH2Q"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r6jSQtFHEeiESIJopIcH2Q" points="[1020, 440, -643984, -643984]$[1020, 420, -643984, -643984]$[940, 420, -643984, -643984]$[940, 381, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r8RJgNFHEeiESIJopIcH2Q" id="(0.49382716049382713,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r8RwkNFHEeiESIJopIcH2Q" id="(0.594059405940594,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r6jSQtFHEeiESIJopIcH2Q" points="[960, 440, -643984, -643984]$[960, 381, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r8RJgNFHEeiESIJopIcH2Q" id="(0.6211180124223602,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r8RwkNFHEeiESIJopIcH2Q" id="(0.7920792079207921,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_uyDdQNIrEeiESIJopIcH2Q" type="Realization_Edge" source="_kuoQgNIrEeiESIJopIcH2Q" target="_VnLWULeqEeiIpI7hu9VsYg" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_uyEEUNIrEeiESIJopIcH2Q" type="Realization_StereotypeLabel">
@@ -4114,7 +4221,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_uyDdQdIrEeiESIJopIcH2Q"/>
       <element xmi:type="uml:Realization" href="AgroIoT.uml#_uyBBANIrEeiESIJopIcH2Q"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uyDdQtIrEeiESIJopIcH2Q" points="[1160, 440, -643984, -643984]$[1160, 419, -643984, -643984]$[1100, 419, -643984, -643984]$[1100, 381, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uzdygNIrEeiESIJopIcH2Q" id="(0.49586776859504134,0.0)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uzdygNIrEeiESIJopIcH2Q" id="(0.3314917127071823,0.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uzdygdIrEeiESIJopIcH2Q" id="(0.39603960396039606,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_vxm1wNIrEeiESIJopIcH2Q" type="Realization_Edge" source="_o5ZAwNIrEeiESIJopIcH2Q" target="_VnLWULeqEeiIpI7hu9VsYg" routing="Rectilinear">
@@ -4128,9 +4235,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_vxm1wdIrEeiESIJopIcH2Q"/>
       <element xmi:type="uml:Realization" href="AgroIoT.uml#_vxkZgNIrEeiESIJopIcH2Q"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vxm1wtIrEeiESIJopIcH2Q" points="[1300, 440, -643984, -643984]$[1300, 420, -643984, -643984]$[1120, 420, -643984, -643984]$[1120, 381, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vzcBwNIrEeiESIJopIcH2Q" id="(0.49586776859504134,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vzco0NIrEeiESIJopIcH2Q" id="(0.594059405940594,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vxm1wtIrEeiESIJopIcH2Q" points="[1240, 440, -643984, -643984]$[1240, 420, -643984, -643984]$[1100, 420, -643984, -643984]$[1100, 381, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vzcBwNIrEeiESIJopIcH2Q" id="(0.29850746268656714,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vzco0NIrEeiESIJopIcH2Q" id="(0.39603960396039606,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_4fhMAOEcEeiE9KDw0vtNSg" type="Association_Edge" source="_emYDwOEcEeiE9KDw0vtNSg" target="_5S9CYX_oEeiGQ_qU31K2fA" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_4fhzEOEcEeiE9KDw0vtNSg" visible="false" type="Association_StereotypeLabel">
@@ -4198,14 +4305,20 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_9RTKoOabEeiE9KDw0vtNSg" visible="false" type="Association_StereotypeLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_9RTKoeabEeiE9KDw0vtNSg" y="-20"/>
       </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_9RTKouabEeiE9KDw0vtNSg" visible="false" type="Association_NameLabel">
+      <children xmi:type="notation:DecorationNode" xmi:id="_9RTKouabEeiE9KDw0vtNSg" type="Association_NameLabel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rnQGUOdBEeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rnQGUedBEeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_9RTKo-abEeiE9KDw0vtNSg" y="20"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_9RTKpOabEeiE9KDw0vtNSg" visible="false" type="Association_TargetRoleLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_9RTKpeabEeiE9KDw0vtNSg" y="-20"/>
       </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_9RTKpuabEeiE9KDw0vtNSg" visible="false" type="Association_SourceRoleLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_9RTKp-abEeiE9KDw0vtNSg" y="20"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9RTKpuabEeiE9KDw0vtNSg" type="Association_SourceRoleLabel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-Dy6IOdBEeiE9KDw0vtNSg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-Dy6IedBEeiE9KDw0vtNSg" key="visible" value="true"/>
+        </eAnnotations>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9RTKp-abEeiE9KDw0vtNSg" x="-17" y="7"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_9RTKqOabEeiE9KDw0vtNSg" visible="false" type="Association_SourceMultiplicityLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_9RTKqeabEeiE9KDw0vtNSg" y="20"/>
@@ -4218,6 +4331,36 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9RSjkuabEeiE9KDw0vtNSg" points="[961, 60, -643984, -643984]$[1060, 60, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9SmyMOabEeiE9KDw0vtNSg" id="(1.0,0.32786885245901637)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9SmyMeabEeiE9KDw0vtNSg" id="(0.0,0.32786885245901637)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_H0qfoOc0EeiE9KDw0vtNSg" type="Realization_Edge" source="_Du7ZUec0EeiE9KDw0vtNSg" target="_-oSYsLepEeiIpI7hu9VsYg" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_H0qfo-c0EeiE9KDw0vtNSg" type="Realization_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_LFIK0Oc0EeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_H0qfpOc0EeiE9KDw0vtNSg" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_H0qfpec0EeiE9KDw0vtNSg" type="Realization_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_LFn6EOc0EeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_H0qfpuc0EeiE9KDw0vtNSg" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_H0qfoec0EeiE9KDw0vtNSg"/>
+      <element xmi:type="uml:Realization" href="AgroIoT.uml#_H0hVsOc0EeiE9KDw0vtNSg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H0qfouc0EeiE9KDw0vtNSg" points="[780, 440, -643984, -643984]$[780, 420, -643984, -643984]$[960, 420, -643984, -643984]$[960, 381, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H1rzUOc0EeiE9KDw0vtNSg" id="(0.7092198581560284,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H1rzUec0EeiE9KDw0vtNSg" id="(0.7920792079207921,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_hYs6kec0EeiE9KDw0vtNSg" type="Realization_Edge" source="_dhZR0ec0EeiE9KDw0vtNSg" target="_VnLWULeqEeiIpI7hu9VsYg" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hYs6lOc0EeiE9KDw0vtNSg" type="Realization_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_sPevgOc3EeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hYs6lec0EeiE9KDw0vtNSg" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_hYs6luc0EeiE9KDw0vtNSg" type="Realization_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_sQOWYOc3EeiE9KDw0vtNSg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hYs6l-c0EeiE9KDw0vtNSg" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_hYs6kuc0EeiE9KDw0vtNSg"/>
+      <element xmi:type="uml:Realization" href="AgroIoT.uml#_hYs6kOc0EeiE9KDw0vtNSg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hYs6k-c0EeiE9KDw0vtNSg" points="[1360, 440, -643984, -643984]$[1360, 419, -643984, -643984]$[1100, 419, -643984, -643984]$[1100, 381, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hZ83wOc0EeiE9KDw0vtNSg" id="(0.3305785123966942,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hZ83wec0EeiE9KDw0vtNSg" id="(0.39603960396039606,1.0)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_Pa_E0WG-EeiiAe1I9uyWIQ" type="PapyrusUMLStateMachineDiagram" name="MQTT" measurementUnit="Pixel">

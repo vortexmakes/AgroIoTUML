@@ -87,7 +87,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jlIM4Jl3Eeii_JvRFExniQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jlIz8Jl3Eeii_JvRFExniQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_GrO78NFHEeiESIJopIcH2Q" name="device" type="_-oP8cLepEeiIpI7hu9VsYg" association="_GrEj4NFHEeiESIJopIcH2Q">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GrO78NFHEeiESIJopIcH2Q" name="dev" type="_-oP8cLepEeiIpI7hu9VsYg" association="_GrEj4NFHEeiESIJopIcH2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GrO78dFHEeiESIJopIcH2Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GrPjANFHEeiESIJopIcH2Q" value="1"/>
       </ownedAttribute>
@@ -201,8 +201,8 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BBgb8LW_Eeix7r8U1ZxtVA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BBgb8bW_Eeix7r8U1ZxtVA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_BBgb9bW_Eeix7r8U1ZxtVA" name="iochgdetector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_BBcKgLW_Eeix7r8U1ZxtVA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_BBgb8rW_Eeix7r8U1ZxtVA" name="iostatus" type="_p8RlwLW-Eeix7r8U1ZxtVA" aggregation="composite" association="_BBcKgLW_Eeix7r8U1ZxtVA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_BBgb9bW_Eeix7r8U1ZxtVA" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_BBcKgLW_Eeix7r8U1ZxtVA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_BBgb8rW_Eeix7r8U1ZxtVA" name="ioStatus" type="_p8RlwLW-Eeix7r8U1ZxtVA" aggregation="composite" association="_BBcKgLW_Eeix7r8U1ZxtVA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BBgb87W_Eeix7r8U1ZxtVA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BBgb9LW_Eeix7r8U1ZxtVA" value="1"/>
       </ownedEnd>
@@ -234,12 +234,36 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_GrPjAdFHEeiESIJopIcH2Q" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_GrEj4NFHEeiESIJopIcH2Q"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_hbFCsNFHEeiESIJopIcH2Q" name="DevA"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_lSkRoNFHEeiESIJopIcH2Q" name="DevB"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hbFCsNFHEeiESIJopIcH2Q" name="Sprayer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VPVNoOc3EeiE9KDw0vtNSg" name="dose">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YfLNwOc3EeiE9KDw0vtNSg" name="sectionQty">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lSkRoNFHEeiESIJopIcH2Q" name="Sampler">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_buJEIOc3EeiE9KDw0vtNSg" name="hardness">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eRyFkOc3EeiE9KDw0vtNSg" name="deep">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Realization" xmi:id="_p2KYoNFHEeiESIJopIcH2Q" client="_hbFCsNFHEeiESIJopIcH2Q" supplier="_-oP8cLepEeiIpI7hu9VsYg"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_r6gO8NFHEeiESIJopIcH2Q" client="_lSkRoNFHEeiESIJopIcH2Q" supplier="_-oP8cLepEeiIpI7hu9VsYg"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_kuftoNIrEeiESIJopIcH2Q" name="DevAJobCond"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_o5XyoNIrEeiESIJopIcH2Q" name="DevBJobCond"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kuftoNIrEeiESIJopIcH2Q" name="HarvestJobCond">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_w8_AcOc3EeiE9KDw0vtNSg" name="pailQtyMin">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_3WSE0Oc3EeiE9KDw0vtNSg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o5XyoNIrEeiESIJopIcH2Q" name="SprayerJobCond">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ol6AwOc3EeiE9KDw0vtNSg" name="sectionQtyMax">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_5zvlwOc3EeiE9KDw0vtNSg" value="5"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Realization" xmi:id="_uyBBANIrEeiESIJopIcH2Q" client="_kuftoNIrEeiESIJopIcH2Q" supplier="_VnGd0LeqEeiIpI7hu9VsYg"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_vxkZgNIrEeiESIJopIcH2Q" client="_o5XyoNIrEeiESIJopIcH2Q" supplier="_VnGd0LeqEeiIpI7hu9VsYg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_emBecOEcEeiE9KDw0vtNSg" name="CBOX_STR"/>
@@ -281,11 +305,19 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9Qkx4eabEeiE9KDw0vtNSg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_9QmAAeabEeiE9KDw0vtNSg" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_9QjjwOabEeiE9KDw0vtNSg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_9Qkx4uabEeiE9KDw0vtNSg" name="geostamp" type="_9_QBULW9Eeix7r8U1ZxtVA" aggregation="composite" association="_9QjjwOabEeiE9KDw0vtNSg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_9Qkx4uabEeiE9KDw0vtNSg" name="position" type="_9_QBULW9Eeix7r8U1ZxtVA" aggregation="composite" association="_9QjjwOabEeiE9KDw0vtNSg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9QlY8OabEeiE9KDw0vtNSg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9QmAAOabEeiE9KDw0vtNSg" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Du7ZUOc0EeiE9KDw0vtNSg" name="Harvest">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-sVMsOc0EeiE9KDw0vtNSg" name="pailQty">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_H0hVsOc0EeiE9KDw0vtNSg" client="_Du7ZUOc0EeiE9KDw0vtNSg" supplier="_-oP8cLepEeiIpI7hu9VsYg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dhZR0Oc0EeiE9KDw0vtNSg" name="SamplerJobCond"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_hYs6kOc0EeiE9KDw0vtNSg" client="_dhZR0Oc0EeiE9KDw0vtNSg" supplier="_VnGd0LeqEeiIpI7hu9VsYg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_Hs4wUFLOEei-ps2IrsePSA" name="ModMgr">
@@ -613,10 +645,10 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vFkzIOaYEeiE9KDw0vtNSg" name="dev" type="_-oP8cLepEeiIpI7hu9VsYg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_C6wCgOEiEeiE9KDw0vtNSg" name="evDevData" signal="_Cp90gOEiEeiE9KDw0vtNSg"/>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_L6qR4OEkEeiE9KDw0vtNSg" name="evStartSampling"/>
-      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MBc2YOEkEeiE9KDw0vtNSg" name="evStartSampling" signal="_L6qR4OEkEeiE9KDw0vtNSg"/>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_SWHSYOEkEeiE9KDw0vtNSg" name="evStopSampling"/>
-      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ScIa0OEkEeiE9KDw0vtNSg" name="evStopSampling" signal="_SWHSYOEkEeiE9KDw0vtNSg"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_L6qR4OEkEeiE9KDw0vtNSg" name="evSampling"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MBc2YOEkEeiE9KDw0vtNSg" name="evSampling" signal="_L6qR4OEkEeiE9KDw0vtNSg"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_SWHSYOEkEeiE9KDw0vtNSg" name="evNotSampling"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ScIa0OEkEeiE9KDw0vtNSg" name="evNotSampling" signal="_SWHSYOEkEeiE9KDw0vtNSg"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_f63l8OEmEeiE9KDw0vtNSg" name="EvtDigInChanged">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_MWVLUOPDEeiGbY0CU5P6pg" name="status" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -1746,7 +1778,7 @@
             <transition xmi:type="uml:Transition" xmi:id="_j8I6cOOAEeiGbY0CU5P6pg" kind="internal" source="_uDtFsOEiEeiE9KDw0vtNSg" target="_uDtFsOEiEeiE9KDw0vtNSg">
               <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ZoWnkOOuEeiGbY0CU5P6pg">
                 <language>C</language>
-                <body>updateDigOutDevNull()</body>
+                <body>updateDigOut()</body>
               </effect>
               <trigger xmi:type="uml:Trigger" xmi:id="_tcVeUOOAEeiGbY0CU5P6pg" name="evDigOutChanged" event="_48MTYOOtEeiGbY0CU5P6pg"/>
             </transition>
