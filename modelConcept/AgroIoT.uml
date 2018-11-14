@@ -98,7 +98,12 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_ljLsJn_oEeiGQ_qU31K2fA" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_ljLsIH_oEeiGQ_qU31K2fA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_5S9CYH_oEeiGQ_qU31K2fA" name="DeviceServer" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5S9CYH_oEeiGQ_qU31K2fA" name="DeviceServer" isActive="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ab90EOgHEei_rN11x4-KBA" name="dev" type="_-oP8cLepEeiIpI7hu9VsYg" association="_abq5IOgHEei_rN11x4-KBA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ab_CMOgHEei_rN11x4-KBA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ab_pQOgHEei_rN11x4-KBA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Ke0RcH_pEeiGQ_qU31K2fA" name="LogMgr" isActive="true"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_DdBA8Jl3Eeii_JvRFExniQ" name="DataBus"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_jlFwoJl3Eeii_JvRFExniQ" memberEnd="_jlHl0pl3Eeii_JvRFExniQ _jlJbAJl3Eeii_JvRFExniQ">
@@ -327,6 +332,12 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Realization" xmi:id="_-icoMOdFEei_rN11x4-KBA" client="_3NWfYOdEEeiE9KDw0vtNSg" supplier="_VnGd0LeqEeiIpI7hu9VsYg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_abq5IOgHEei_rN11x4-KBA" visibility="protected" memberEnd="_ab90EOgHEei_rN11x4-KBA _acAQUOgHEei_rN11x4-KBA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ab7X0OgHEei_rN11x4-KBA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ab7-4OgHEei_rN11x4-KBA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_acAQUOgHEei_rN11x4-KBA" name="deviceserver" type="_5S9CYH_oEeiGQ_qU31K2fA" association="_abq5IOgHEei_rN11x4-KBA"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_Hs4wUFLOEei-ps2IrsePSA" name="ModMgr">
