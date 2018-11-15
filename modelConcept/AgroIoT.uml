@@ -711,6 +711,18 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_48MTYOOtEeiGbY0CU5P6pg" name="evtDigOutChanged" signal="_4vhwYOOtEeiGbY0CU5P6pg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_758RkOjJEei_rN11x4-KBA" name="EvtSprayerData">
+        <generalization xmi:type="uml:Generalization" xmi:id="_IJq90OjKEei_rN11x4-KBA" general="_Cp90gOEiEeiE9KDw0vtNSg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ESnMsOjKEei_rN11x4-KBA" name="param" type="_hbFCsNFHEeiESIJopIcH2Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1T2R4OjKEei_rN11x4-KBA" name="EvtSamplerData">
+        <generalization xmi:type="uml:Generalization" xmi:id="_JE0iAOjLEei_rN11x4-KBA" general="_Cp90gOEiEeiE9KDw0vtNSg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3ECdIOjKEei_rN11x4-KBA" name="param" type="_lSkRoNFHEeiESIJopIcH2Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9GmcgOjKEei_rN11x4-KBA" name="EvtHarvestData">
+        <generalization xmi:type="uml:Generalization" xmi:id="_LgtVoOjLEei_rN11x4-KBA" general="_Cp90gOEiEeiE9KDw0vtNSg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_C9UYQOjLEei_rN11x4-KBA" name="param" type="_Du7ZUOc0EeiE9KDw0vtNSg"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_i1rp0FRTEeiBd_DXg33BBQ" name="ConMgr">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_yA2HgFioEeiQLo5rqCRH8w">
