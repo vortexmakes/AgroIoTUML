@@ -4132,8 +4132,8 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_BCLKUbW_Eeix7r8U1ZxtVA"/>
       <element xmi:type="uml:Association" href="AgroIoT.uml#_BBcKgLW_Eeix7r8U1ZxtVA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BCLKUrW_Eeix7r8U1ZxtVA" points="[940, 101, -643984, -643984]$[940, 220, -643984, -643984]$[1060, 220, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BDWPALW_Eeix7r8U1ZxtVA" id="(0.8264462809917356,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BCLKUrW_Eeix7r8U1ZxtVA" points="[961, 80, -643984, -643984]$[1000, 80, -643984, -643984]$[1000, 160, -643984, -643984]$[1060, 160, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BDWPALW_Eeix7r8U1ZxtVA" id="(1.0,0.6557377049180327)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BDWPAbW_Eeix7r8U1ZxtVA" id="(0.0,0.32786885245901637)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_hqVIQLW_Eeix7r8U1ZxtVA" type="Association_Edge" source="_KwuXgJ77EeiH_JeYeCwMag" target="_9_QBUbW9Eeix7r8U1ZxtVA" routing="Rectilinear">
@@ -4481,6 +4481,31 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_adrEQugHEei_rN11x4-KBA" points="[1320, 100, -643984, -643984]$[1320, 280, -643984, -643984]$[960, 280, -643984, -643984]$[960, 320, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_agaPMOgHEei_rN11x4-KBA" id="(0.5673758865248227,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_agaPMegHEei_rN11x4-KBA" id="(0.7920792079207921,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_oRFKAO67EeirKvWQ2hmfZQ" type="Association_Edge" source="_VnLWULeqEeiIpI7hu9VsYg" target="_eX7mYX_oEeiGQ_qU31K2fA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRFKA-67EeirKvWQ2hmfZQ" visible="false" type="Association_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRFKBO67EeirKvWQ2hmfZQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRFKBe67EeirKvWQ2hmfZQ" visible="false" type="Association_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRFKBu67EeirKvWQ2hmfZQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRFKB-67EeirKvWQ2hmfZQ" visible="false" type="Association_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRFKCO67EeirKvWQ2hmfZQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRFKCe67EeirKvWQ2hmfZQ" type="Association_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRFKCu67EeirKvWQ2hmfZQ" x="32" y="30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRFKC-67EeirKvWQ2hmfZQ" visible="false" type="Association_SourceMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRFKDO67EeirKvWQ2hmfZQ" x="-43" y="5"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRFKDe67EeirKvWQ2hmfZQ" visible="false" type="Association_TargetMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRFKDu67EeirKvWQ2hmfZQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_oRFKAe67EeirKvWQ2hmfZQ"/>
+      <element xmi:type="uml:Association" href="AgroIoT.uml#_oFN4QO67EeirKvWQ2hmfZQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oRFKAu67EeirKvWQ2hmfZQ" points="[1100, 320, -643984, -643984]$[1100, 219, -643984, -643984]$[940, 219, -643984, -643984]$[940, 101, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oVGuYO67EeirKvWQ2hmfZQ" id="(0.39603960396039606,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oVGuYe67EeirKvWQ2hmfZQ" id="(0.8264462809917356,1.0)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_Pa_E0WG-EeiiAe1I9uyWIQ" type="PapyrusUMLStateMachineDiagram" name="MQTT" measurementUnit="Pixel">

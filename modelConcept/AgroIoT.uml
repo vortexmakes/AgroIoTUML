@@ -225,7 +225,12 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_-oP8cLepEeiIpI7hu9VsYg" name="Device" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="_5q6o4LW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_VnGd0LeqEeiIpI7hu9VsYg" name="JobCond" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VnGd0LeqEeiIpI7hu9VsYg" name="JobCond" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oFgzMu67EeirKvWQ2hmfZQ" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_oFN4QO67EeirKvWQ2hmfZQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oFgzM-67EeirKvWQ2hmfZQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oFgzNO67EeirKvWQ2hmfZQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_oYcQ4LtjEeiWvNFPxkFrNg" memberEnd="_oYcQ47tjEeiWvNFPxkFrNg _oYcQ5LtjEeiWvNFPxkFrNg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oYcQ4btjEeiWvNFPxkFrNg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oYcQ4rtjEeiWvNFPxkFrNg" key="nature" value="UML_Nature"/>
@@ -337,6 +342,12 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ab7-4OgHEei_rN11x4-KBA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_acAQUOgHEei_rN11x4-KBA" name="deviceserver" type="_5S9CYH_oEeiGQ_qU31K2fA" association="_abq5IOgHEei_rN11x4-KBA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oFN4QO67EeirKvWQ2hmfZQ" memberEnd="_oFgzMu67EeirKvWQ2hmfZQ _oFgzNe67EeirKvWQ2hmfZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oFgzMO67EeirKvWQ2hmfZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oFgzMe67EeirKvWQ2hmfZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oFgzNe67EeirKvWQ2hmfZQ" name="jobcond" type="_VnGd0LeqEeiIpI7hu9VsYg" association="_oFN4QO67EeirKvWQ2hmfZQ"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
