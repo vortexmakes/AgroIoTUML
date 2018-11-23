@@ -225,7 +225,7 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_-oP8cLepEeiIpI7hu9VsYg" name="Device" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="_5q6o4LW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_VnGd0LeqEeiIpI7hu9VsYg" name="JobCond" isAbstract="true">
+    <packagedElement xmi:type="uml:Class" xmi:id="_VnGd0LeqEeiIpI7hu9VsYg" name="JobCond" visibility="protected" isAbstract="true">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_oFgzMu67EeirKvWQ2hmfZQ" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_oFN4QO67EeirKvWQ2hmfZQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oFgzM-67EeirKvWQ2hmfZQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oFgzNO67EeirKvWQ2hmfZQ" value="1"/>
@@ -235,7 +235,7 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oYcQ4btjEeiWvNFPxkFrNg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oYcQ4rtjEeiWvNFPxkFrNg" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_oYcQ47tjEeiWvNFPxkFrNg" name="iostatus" type="_VnGd0LeqEeiIpI7hu9VsYg" aggregation="composite" association="_oYcQ4LtjEeiWvNFPxkFrNg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oYcQ47tjEeiWvNFPxkFrNg" name="jobCond" type="_VnGd0LeqEeiIpI7hu9VsYg" aggregation="composite" association="_oYcQ4LtjEeiWvNFPxkFrNg"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_oYcQ5LtjEeiWvNFPxkFrNg" name="data" type="_-oP8cLepEeiIpI7hu9VsYg" association="_oYcQ4LtjEeiWvNFPxkFrNg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_GrEj4NFHEeiESIJopIcH2Q" memberEnd="_GrO78NFHEeiESIJopIcH2Q _GrPjAdFHEeiESIJopIcH2Q">
@@ -244,11 +244,11 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_GrPjAdFHEeiESIJopIcH2Q" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_GrEj4NFHEeiESIJopIcH2Q"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_hbFCsNFHEeiESIJopIcH2Q" name="Sprayer">
+    <packagedElement xmi:type="uml:Class" xmi:id="_hbFCsNFHEeiESIJopIcH2Q" name="Sprayer" visibility="package">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_VPVNoOc3EeiE9KDw0vtNSg" name="dose">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_YfLNwOc3EeiE9KDw0vtNSg" name="sectionQty">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YfLNwOc3EeiE9KDw0vtNSg" name="nSection">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
     </packagedElement>
@@ -263,13 +263,13 @@
     <packagedElement xmi:type="uml:Realization" xmi:id="_p2KYoNFHEeiESIJopIcH2Q" client="_hbFCsNFHEeiESIJopIcH2Q" supplier="_-oP8cLepEeiIpI7hu9VsYg"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_r6gO8NFHEeiESIJopIcH2Q" client="_lSkRoNFHEeiESIJopIcH2Q" supplier="_-oP8cLepEeiIpI7hu9VsYg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_kuftoNIrEeiESIJopIcH2Q" name="HarvestJobCond">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_w8_AcOc3EeiE9KDw0vtNSg" name="pailQtyMin">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_w8_AcOc3EeiE9KDw0vtNSg" name="nPailMin">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_3WSE0Oc3EeiE9KDw0vtNSg"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_o5XyoNIrEeiESIJopIcH2Q" name="SprayerJobCond">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ol6AwOc3EeiE9KDw0vtNSg" name="sectionQtyMax">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ol6AwOc3EeiE9KDw0vtNSg" name="nSectionMax">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_5zvlwOc3EeiE9KDw0vtNSg" value="5"/>
       </ownedAttribute>
@@ -289,7 +289,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUETseEdEeiE9KDw0vtNSg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DUE6wOEdEeiE9KDw0vtNSg" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="cBox" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="rawData" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_VPs30ONXEeiE9KDw0vtNSg" name="RKHEvt"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_b_qvwONXEeiE9KDw0vtNSg" name="EvtGeoStamp">
@@ -321,7 +321,7 @@
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Du7ZUOc0EeiE9KDw0vtNSg" name="Harvest">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_-sVMsOc0EeiE9KDw0vtNSg" name="pailQty">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-sVMsOc0EeiE9KDw0vtNSg" name="nPail">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
     </packagedElement>
