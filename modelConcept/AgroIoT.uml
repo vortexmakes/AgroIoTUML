@@ -29,7 +29,7 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_A5sHYFdyEeia3PgQtXbrog" name="OtherModule"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_vhtLEFd1Eeia3PgQtXbrog" client="__5Dw0FdxEeia3PgQtXbrog" supplier="_Rf1_gFLLEei-ps2IrsePSA"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_0CPXAFd1Eeia3PgQtXbrog" client="_A5sHYFdyEeia3PgQtXbrog" supplier="_u3OAcFdxEeia3PgQtXbrog"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_QQ4PoFd5Eeia3PgQtXbrog" name="YipiesProt" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QQ4PoFd5Eeia3PgQtXbrog" name="CommMgr" isActive="true"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_hzvpcFd5Eeia3PgQtXbrog" client="_Rf1_gFLLEei-ps2IrsePSA" supplier="_Rf1_gFLLEei-ps2IrsePSA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_GhojIF7MEeiYcaQ4qYJ6pg" name="SSP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_nUzsAF7REeiYcaQ4qYJ6pg" name="Packet"/>
@@ -45,8 +45,8 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4jBfEH-MEeiGQ_qU31K2fA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4jBfEX-MEeiGQ_qU31K2fA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_4jCGIH-MEeiGQ_qU31K2fA" name="yipiesprot" type="_QQ4PoFd5Eeia3PgQtXbrog" association="_4jA4AH-MEeiGQ_qU31K2fA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_4jDUQH-MEeiGQ_qU31K2fA" name="conmgr" type="_tp__YFdxEeia3PgQtXbrog" association="_4jA4AH-MEeiGQ_qU31K2fA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4jCGIH-MEeiGQ_qU31K2fA" name="commMgr" type="_QQ4PoFd5Eeia3PgQtXbrog" association="_4jA4AH-MEeiGQ_qU31K2fA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4jDUQH-MEeiGQ_qU31K2fA" name="conMgr" type="_tp__YFdxEeia3PgQtXbrog" association="_4jA4AH-MEeiGQ_qU31K2fA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_VdRn4H-NEeiGQ_qU31K2fA" memberEnd="_VdSO8n-NEeiGQ_qU31K2fA _VdTdEH-NEeiGQ_qU31K2fA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VdSO8H-NEeiGQ_qU31K2fA" source="org.eclipse.papyrus">
@@ -86,10 +86,6 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_jlHl0pl3Eeii_JvRFExniQ" name="backupFrame" type="_Ke0RcH_pEeiGQ_qU31K2fA" association="_jlFwoJl3Eeii_JvRFExniQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jlIM4Jl3Eeii_JvRFExniQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jlIz8Jl3Eeii_JvRFExniQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_GrO78NFHEeiESIJopIcH2Q" name="dev" type="_-oP8cLepEeiIpI7hu9VsYg" association="_GrEj4NFHEeiESIJopIcH2Q">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GrO78dFHEeiESIJopIcH2Q"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GrPjANFHEeiESIJopIcH2Q" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ljLsIH_oEeiGQ_qU31K2fA" memberEnd="_ljLsI3_oEeiGQ_qU31K2fA _ljLsJn_oEeiGQ_qU31K2fA">
@@ -225,12 +221,7 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_-oP8cLepEeiIpI7hu9VsYg" name="Device" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="_5q6o4LW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_VnGd0LeqEeiIpI7hu9VsYg" name="JobCond" visibility="protected" isAbstract="true">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_oFgzMu67EeirKvWQ2hmfZQ" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_oFN4QO67EeirKvWQ2hmfZQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oFgzM-67EeirKvWQ2hmfZQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oFgzNO67EeirKvWQ2hmfZQ" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VnGd0LeqEeiIpI7hu9VsYg" name="JobCond" visibility="protected" isAbstract="true"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_oYcQ4LtjEeiWvNFPxkFrNg" memberEnd="_oYcQ47tjEeiWvNFPxkFrNg _oYcQ5LtjEeiWvNFPxkFrNg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oYcQ4btjEeiWvNFPxkFrNg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oYcQ4rtjEeiWvNFPxkFrNg" key="nature" value="UML_Nature"/>
@@ -243,6 +234,10 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GrKqgdFHEeiESIJopIcH2Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_GrPjAdFHEeiESIJopIcH2Q" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_GrEj4NFHEeiESIJopIcH2Q"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GrO78NFHEeiESIJopIcH2Q" name="dev" type="_-oP8cLepEeiIpI7hu9VsYg" association="_GrEj4NFHEeiESIJopIcH2Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GrO78dFHEeiESIJopIcH2Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GrPjANFHEeiESIJopIcH2Q" value="1"/>
+      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_hbFCsNFHEeiESIJopIcH2Q" name="Sprayer" visibility="package">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_VPVNoOc3EeiE9KDw0vtNSg" name="dose">
@@ -269,7 +264,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_o5XyoNIrEeiESIJopIcH2Q" name="SprayerJobCond">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ol6AwOc3EeiE9KDw0vtNSg" name="nSectionMax">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ol6AwOc3EeiE9KDw0vtNSg" name="doseMax">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_5zvlwOc3EeiE9KDw0vtNSg" value="5"/>
       </ownedAttribute>
@@ -342,12 +337,6 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ab7-4OgHEei_rN11x4-KBA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_acAQUOgHEei_rN11x4-KBA" name="deviceserver" type="_5S9CYH_oEeiGQ_qU31K2fA" association="_abq5IOgHEei_rN11x4-KBA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_oFN4QO67EeirKvWQ2hmfZQ" memberEnd="_oFgzMu67EeirKvWQ2hmfZQ _oFgzNe67EeirKvWQ2hmfZQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oFgzMO67EeirKvWQ2hmfZQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oFgzMe67EeirKvWQ2hmfZQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_oFgzNe67EeirKvWQ2hmfZQ" name="jobcond" type="_VnGd0LeqEeiIpI7hu9VsYg" association="_oFN4QO67EeirKvWQ2hmfZQ"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
