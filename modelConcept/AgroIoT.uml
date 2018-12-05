@@ -1905,14 +1905,17 @@
         <transition xmi:type="uml:Transition" xmi:id="_L9ChMPSQEeiHY4J873czfg" source="_CK1nUPSQEeiHY4J873czfg" target="_EP1HgPPYEeiHY4J873czfg"/>
         <transition xmi:type="uml:Transition" xmi:id="_zWFAQPSUEeiHY4J873czfg" source="_EP1HgPPYEeiHY4J873czfg" target="_CK1nUPSQEeiHY4J873czfg"/>
         <transition xmi:type="uml:Transition" xmi:id="_zNJ4UPSVEeiHY4J873czfg" source="_p_KewPSVEeiHY4J873czfg" target="_TKtA0PPXEeiHY4J873czfg"/>
-        <transition xmi:type="uml:Transition" xmi:id="_R0WrIPSWEeiHY4J873czfg" source="_p_KewPSVEeiHY4J873czfg" target="_JHQYIPSWEeiHY4J873czfg"/>
         <transition xmi:type="uml:Transition" xmi:id="_Y9iUUPSWEeiHY4J873czfg" source="_TKtA0PPXEeiHY4J873czfg" target="_2UzXEPPXEeiHY4J873czfg"/>
-        <transition xmi:type="uml:Transition" xmi:id="_rWzKoPSWEeiHY4J873czfg" source="_JHQYIPSWEeiHY4J873czfg" target="_9ZIK4PPWEeiHY4J873czfg"/>
         <transition xmi:type="uml:Transition" xmi:id="_tqWhoPSWEeiHY4J873czfg" source="_9ZIK4PPWEeiHY4J873czfg" target="_TKtA0PPXEeiHY4J873czfg"/>
         <transition xmi:type="uml:Transition" xmi:id="_G2zjAPSXEeiHY4J873czfg" source="_2UzXEPPXEeiHY4J873czfg" target="_9ZIK4PPWEeiHY4J873czfg"/>
         <transition xmi:type="uml:Transition" xmi:id="_6fcIQPSXEeiHY4J873czfg" source="_CK1nUPSQEeiHY4J873czfg" target="_xye_MPSXEeiHY4J873czfg"/>
         <transition xmi:type="uml:Transition" xmi:id="_LZRzMPSYEeiHY4J873czfg" source="_xye_MPSXEeiHY4J873czfg" target="_p_KewPSVEeiHY4J873czfg"/>
-        <transition xmi:type="uml:Transition" xmi:id="_-zuygPSYEeiHY4J873czfg" source="_2UzXEPPXEeiHY4J873czfg" target="_EP1HgPPYEeiHY4J873czfg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_-zuygPSYEeiHY4J873czfg" source="_4Bn5YPe1EeiHY4J873czfg" target="_EP1HgPPYEeiHY4J873czfg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_-0la8Pe1EeiHY4J873czfg" source="_2UzXEPPXEeiHY4J873czfg" target="_4Bn5YPe1EeiHY4J873czfg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_BSWd4Pe2EeiHY4J873czfg" source="_4Bn5YPe1EeiHY4J873czfg" target="_n4fdMPe2EeiHY4J873czfg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_vxZ6MPe2EeiHY4J873czfg" source="_EP1HgPPYEeiHY4J873czfg" target="_n4fdMPe2EeiHY4J873czfg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_w7CbwPe2EeiHY4J873czfg" source="_n4fdMPe2EeiHY4J873czfg" target="_9ZIK4PPWEeiHY4J873czfg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_eYDvIPe-EeiHY4J873czfg" source="_p_KewPSVEeiHY4J873czfg" target="_4Bn5YPe1EeiHY4J873czfg"/>
         <subvertex xmi:type="uml:State" xmi:id="_9ZIK4PPWEeiHY4J873czfg" name="WaitSync"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_NTGUQPPXEeiHY4J873czfg" name="I1"/>
         <subvertex xmi:type="uml:State" xmi:id="_TKtA0PPXEeiHY4J873czfg" name="RequestCurrStatus"/>
@@ -1920,8 +1923,9 @@
         <subvertex xmi:type="uml:State" xmi:id="_EP1HgPPYEeiHY4J873czfg" name="SendingHistory"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_CK1nUPSQEeiHY4J873czfg" name="ChkEndOfBlockToSend" kind="choice"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_p_KewPSVEeiHY4J873czfg" name="ChkPendingCurrStatus" kind="choice"/>
-        <subvertex xmi:type="uml:Pseudostate" xmi:id="_JHQYIPSWEeiHY4J873czfg" name="ChkHistory" kind="choice"/>
         <subvertex xmi:type="uml:State" xmi:id="_xye_MPSXEeiHY4J873czfg" name="WaitAck"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_4Bn5YPe1EeiHY4J873czfg" name="CheckHistory" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_n4fdMPe2EeiHY4J873czfg" name="EndCycle"/>
       </region>
     </packagedElement>
   </packagedElement>
