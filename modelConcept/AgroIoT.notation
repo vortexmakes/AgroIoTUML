@@ -7354,7 +7354,7 @@
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_zWaXcPSUEeiHY4J873czfg" type="Transition_GuardLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_0TYWAPSUEeiHY4J873czfg" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_zWaXcfSUEeiHY4J873czfg" x="-18" y="-22"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zWaXcfSUEeiHY4J873czfg" x="-58" y="-22"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_zWaXcvSUEeiHY4J873czfg" type="Transition_StereotypeLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_0TlKUPSUEeiHY4J873czfg" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -7362,7 +7362,7 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_zWZwYfSUEeiHY4J873czfg"/>
       <element xmi:type="uml:Transition" href="AgroIoT.uml#_zWFAQPSUEeiHY4J873czfg"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zWZwYvSUEeiHY4J873czfg" points="[701, 580, -643984, -643984]$[740, 580, -643984, -643984]$[740, 480, -643984, -643984]$[660, 480, -643984, -643984]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zWZwYvSUEeiHY4J873czfg" points="[701, 580, -643984, -643984]$[760, 580, -643984, -643984]$[760, 480, -643984, -643984]$[660, 480, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zXJXQPSUEeiHY4J873czfg" id="(1.0,0.4878048780487805)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zXJXQfSUEeiHY4J873czfg" id="(0.975609756097561,0.47619047619047616)"/>
     </edges>

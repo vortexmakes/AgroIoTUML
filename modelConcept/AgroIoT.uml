@@ -1923,7 +1923,18 @@
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_wCikQPPWEeiHY4J873czfg" name="CommMgr">
       <region xmi:type="uml:Region" xmi:id="_xLHV4PPWEeiHY4J873czfg" name="Region1">
         <transition xmi:type="uml:Transition" xmi:id="_OuO1gPPXEeiHY4J873czfg" source="_NTGUQPPXEeiHY4J873czfg" target="_9ZIK4PPWEeiHY4J873czfg"/>
-        <transition xmi:type="uml:Transition" xmi:id="_L9ChMPSQEeiHY4J873czfg" source="_CK1nUPSQEeiHY4J873czfg" target="_EP1HgPPYEeiHY4J873czfg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_L9ChMPSQEeiHY4J873czfg" guard="_Ze2lcBXDEem9kZRM4Q4ttg" source="_CK1nUPSQEeiHY4J873czfg" target="_EP1HgPPYEeiHY4J873czfg">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_Ze2lcBXDEem9kZRM4Q4ttg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_cRK8EBXDEem9kZRM4Q4ttg">
+              <language>C</language>
+              <body>isEndOfBlock()</body>
+            </specification>
+          </ownedRule>
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_02S3sBXDEem9kZRM4Q4ttg">
+            <language>C</language>
+            <body>sendOneMsg()</body>
+          </effect>
+        </transition>
         <transition xmi:type="uml:Transition" xmi:id="_zWFAQPSUEeiHY4J873czfg" source="_EP1HgPPYEeiHY4J873czfg" target="_CK1nUPSQEeiHY4J873czfg">
           <trigger xmi:type="uml:Trigger" xmi:id="_4QlfMBXBEem9kZRM4Q4ttg" event="_36ONoBXBEem9kZRM4Q4ttg"/>
         </transition>
@@ -1933,7 +1944,7 @@
           <ownedRule xmi:type="uml:Constraint" xmi:id="_1Qmx8BW_Eem9kZRM4Q4ttg">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_5aYqwBW_Eem9kZRM4Q4ttg">
               <language>C</language>
-              <body>isMsgToSend()</body>
+              <body>isThereMsg()</body>
             </specification>
           </ownedRule>
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_JlJXQBXCEem9kZRM4Q4ttg">
