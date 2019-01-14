@@ -673,6 +673,7 @@
       <packagedElement xmi:type="uml:Signal" xmi:id="_N1DXANfZEeirfc9iqNLHXw" name="evNoDev"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_OFVOsNfZEeirfc9iqNLHXw" name="evNoDev" signal="_N1DXANfZEeirfc9iqNLHXw"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_Cp90gOEiEeiE9KDw0vtNSg" name="EvtDevData">
+        <generalization xmi:type="uml:Generalization" xmi:id="_qYTzsBglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vFkzIOaYEeiE9KDw0vtNSg" name="dev" type="_-oP8cLepEeiIpI7hu9VsYg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_MuEuUOmUEeiLtOxmLeJ6hw" name="id">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -684,6 +685,7 @@
       <packagedElement xmi:type="uml:Signal" xmi:id="_SWHSYOEkEeiE9KDw0vtNSg" name="evNotSampling"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ScIa0OEkEeiE9KDw0vtNSg" name="evNotSampling" signal="_SWHSYOEkEeiE9KDw0vtNSg"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_f63l8OEmEeiE9KDw0vtNSg" name="EvtDigInChanged">
+        <generalization xmi:type="uml:Generalization" xmi:id="_5xj1oBglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_MWVLUOPDEeiGbY0CU5P6pg" name="status" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
@@ -712,6 +714,7 @@
         </when>
       </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="_nMlNwONPEeiE9KDw0vtNSg" name="EvtGeoStamp">
+        <generalization xmi:type="uml:Generalization" xmi:id="_7dB48BglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_SXFz4OPDEeiGbY0CU5P6pg" name="position" type="_9_QBULW9Eeix7r8U1ZxtVA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_nVkKoONPEeiE9KDw0vtNSg" name="evGeoStamp" signal="_nMlNwONPEeiE9KDw0vtNSg"/>
@@ -720,6 +723,7 @@
       <packagedElement xmi:type="uml:Signal" xmi:id="_tRXocONUEeiE9KDw0vtNSg" name="evGeoReady"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ta3isONUEeiE9KDw0vtNSg" name="evGeoReady" signal="_tRXocONUEeiE9KDw0vtNSg"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_4vhwYOOtEeiGbY0CU5P6pg" name="EvtDigOutChanged">
+        <generalization xmi:type="uml:Generalization" xmi:id="_4Z0moBglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_n-0KQOPDEeiGbY0CU5P6pg" name="status">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
@@ -743,10 +747,12 @@
         </when>
       </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="_MAYc8BT5Eem9kZRM4Q4ttg" name="EvtRawData">
+        <generalization xmi:type="uml:Generalization" xmi:id="_sI8q4BglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_MAYc8RT5Eem9kZRM4Q4ttg" name="rawData" type="_emBecOEcEeiE9KDw0vtNSg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_NOf14BT5Eem9kZRM4Q4ttg" name="evRawData" signal="_MAYc8BT5Eem9kZRM4Q4ttg"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_36ONoBXBEem9kZRM4Q4ttg" signal="_0iYskGWgEeiax4a4nV9STA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_i4ZskBglEemOl_Rcwx2UMg" name="RKHEvt"/>
     </packagedElement>
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_i1rp0FRTEeiBd_DXg33BBQ" name="ConMgr">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_yA2HgFioEeiQLo5rqCRH8w">
