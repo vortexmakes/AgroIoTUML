@@ -30,7 +30,7 @@
     <packagedElement xmi:type="uml:Realization" xmi:id="_vhtLEFd1Eeia3PgQtXbrog" client="__5Dw0FdxEeia3PgQtXbrog" supplier="_Rf1_gFLLEei-ps2IrsePSA"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_0CPXAFd1Eeia3PgQtXbrog" client="_A5sHYFdyEeia3PgQtXbrog" supplier="_u3OAcFdxEeia3PgQtXbrog"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_QQ4PoFd5Eeia3PgQtXbrog" name="CommMgr" isActive="true">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_7gml4BT6Eem9kZRM4Q4ttg" name="currRawData" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_7gPZgBT6Eem9kZRM4Q4ttg">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7gml4BT6Eem9kZRM4Q4ttg" name="rawData" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_7gPZgBT6Eem9kZRM4Q4ttg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gnM8BT6Eem9kZRM4Q4ttg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gnM8RT6Eem9kZRM4Q4ttg" value="1"/>
       </ownedAttribute>
@@ -46,13 +46,6 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0Ts0YH-LEeiGQ_qU31K2fA" name="SSP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_PDLHsH-MEeiGQ_qU31K2fA" name="Epoch"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_4jA4AH-MEeiGQ_qU31K2fA" memberEnd="_4jCGIH-MEeiGQ_qU31K2fA _4jDUQH-MEeiGQ_qU31K2fA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4jBfEH-MEeiGQ_qU31K2fA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4jBfEX-MEeiGQ_qU31K2fA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_4jCGIH-MEeiGQ_qU31K2fA" name="commMgr" type="_QQ4PoFd5Eeia3PgQtXbrog" association="_4jA4AH-MEeiGQ_qU31K2fA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_4jDUQH-MEeiGQ_qU31K2fA" name="conMgr" type="_tp__YFdxEeia3PgQtXbrog" association="_4jA4AH-MEeiGQ_qU31K2fA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_VdRn4H-NEeiGQ_qU31K2fA" memberEnd="_VdSO8n-NEeiGQ_qU31K2fA _VdTdEH-NEeiGQ_qU31K2fA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VdSO8H-NEeiGQ_qU31K2fA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VdSO8X-NEeiGQ_qU31K2fA" key="nature" value="UML_Nature"/>
@@ -349,6 +342,7 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_7gnM8hT6Eem9kZRM4Q4ttg" name="rawData" type="_QQ4PoFd5Eeia3PgQtXbrog" association="_7gPZgBT6Eem9kZRM4Q4ttg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_KKfccBpWEemiTP14HmAPrg" client="_QQ4PoFd5Eeia3PgQtXbrog" supplier="_O1HAELVOEeiCDrvEUVz2Ug"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_Hs4wUFLOEei-ps2IrsePSA" name="ModMgr">
@@ -1993,11 +1987,16 @@
         <transition xmi:type="uml:Transition" xmi:id="_OUaA8BTsEem9kZRM4Q4ttg" source="_owbCMBTrEem9kZRM4Q4ttg" target="_jQ0l8BTrEem9kZRM4Q4ttg">
           <trigger xmi:type="uml:Trigger" xmi:id="_IMHlEBgCEemOl_Rcwx2UMg" event="_ACYHoGG0EeiiAe1I9uyWIQ"/>
         </transition>
-        <transition xmi:type="uml:Transition" xmi:id="_s9paIBT3Eem9kZRM4Q4ttg" source="_roWbIBT3Eem9kZRM4Q4ttg" target="_jQ0l8BTrEem9kZRM4Q4ttg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_s9paIBT3Eem9kZRM4Q4ttg" source="_roWbIBT3Eem9kZRM4Q4ttg" target="_jQ0l8BTrEem9kZRM4Q4ttg">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_75QJcBprEemiTP14HmAPrg">
+            <language>C</language>
+            <body>init()</body>
+          </effect>
+        </transition>
         <transition xmi:type="uml:Transition" xmi:id="_x9JdMBT7Eem9kZRM4Q4ttg" kind="internal" source="_owbCMBTrEem9kZRM4Q4ttg" target="_owbCMBTrEem9kZRM4Q4ttg">
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_69zBgBT_Eem9kZRM4Q4ttg">
             <language>C</language>
-            <body>updateCurrStatus()</body>
+            <body>updateStatus()</body>
           </effect>
           <trigger xmi:type="uml:Trigger" xmi:id="_1wCgABT7Eem9kZRM4Q4ttg" event="_NOf14BT5Eem9kZRM4Q4ttg"/>
         </transition>
@@ -2072,10 +2071,10 @@
               <trigger xmi:type="uml:Trigger" xmi:id="_1Us-sBf3EemOl_Rcwx2UMg" event="_0oZN8GWgEeiax4a4nV9STA"/>
             </transition>
             <subvertex xmi:type="uml:State" xmi:id="_n4fdMPe2EeiHY4J873czfg" name="EndCycle"/>
-            <subvertex xmi:type="uml:State" xmi:id="_2UzXEPPXEeiHY4J873czfg" name="SendingCurrStatus">
+            <subvertex xmi:type="uml:State" xmi:id="_2UzXEPPXEeiHY4J873czfg" name="SendingStatus">
               <entry xmi:type="uml:OpaqueBehavior" xmi:id="_lvrogBUAEem9kZRM4Q4ttg">
                 <language>C</language>
-                <body>sendCurrStatus()</body>
+                <body>sendStatus()</body>
               </entry>
             </subvertex>
             <subvertex xmi:type="uml:State" xmi:id="_EP1HgPPYEeiHY4J873czfg" name="SendingHist">
@@ -2084,8 +2083,17 @@
                 <body>sendOneMsg()</body>
               </entry>
             </subvertex>
-            <subvertex xmi:type="uml:State" xmi:id="_9ZIK4PPWEeiHY4J873czfg" name="WaitSync"/>
-            <subvertex xmi:type="uml:Pseudostate" xmi:id="_p_KewPSVEeiHY4J873czfg" name="ChkPendingCurrStatus" kind="choice"/>
+            <subvertex xmi:type="uml:State" xmi:id="_9ZIK4PPWEeiHY4J873czfg" name="WaitSync">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_senkMBsrEemiTP14HmAPrg">
+                <language>C</language>
+                <body>enWaitSync()</body>
+              </entry>
+              <exit xmi:type="uml:OpaqueBehavior" xmi:id="_uPed0BsrEemiTP14HmAPrg">
+                <language>C</language>
+                <body>exWaitSync()</body>
+              </exit>
+            </subvertex>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_p_KewPSVEeiHY4J873czfg" name="ChkPendStatus" kind="choice"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_CK1nUPSQEeiHY4J873czfg" name="ChkEndOfBlock" kind="choice"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_NTGUQPPXEeiHY4J873czfg" name="I2"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_4Bn5YPe1EeiHY4J873czfg" name="ChkHist" kind="choice"/>
