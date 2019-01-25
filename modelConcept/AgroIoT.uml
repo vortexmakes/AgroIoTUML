@@ -30,7 +30,7 @@
     <packagedElement xmi:type="uml:Realization" xmi:id="_vhtLEFd1Eeia3PgQtXbrog" client="__5Dw0FdxEeia3PgQtXbrog" supplier="_Rf1_gFLLEei-ps2IrsePSA"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_0CPXAFd1Eeia3PgQtXbrog" client="_A5sHYFdyEeia3PgQtXbrog" supplier="_u3OAcFdxEeia3PgQtXbrog"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_QQ4PoFd5Eeia3PgQtXbrog" name="CommMgr" isActive="true">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_7gml4BT6Eem9kZRM4Q4ttg" name="rawData" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_7gPZgBT6Eem9kZRM4Q4ttg">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7gml4BT6Eem9kZRM4Q4ttg" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_7gPZgBT6Eem9kZRM4Q4ttg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gnM8BT6Eem9kZRM4Q4ttg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gnM8RT6Eem9kZRM4Q4ttg" value="1"/>
       </ownedAttribute>
@@ -84,6 +84,10 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_jlHl0pl3Eeii_JvRFExniQ" name="backupFrame" type="_Ke0RcH_pEeiGQ_qU31K2fA" association="_jlFwoJl3Eeii_JvRFExniQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jlIM4Jl3Eeii_JvRFExniQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jlIz8Jl3Eeii_JvRFExniQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8LFfACC7EemyTKt2ez43LQ" name="batChStatus" type="_po_c0CC7EemyTKt2ez43LQ" aggregation="composite" association="_8K7G8CC7EemyTKt2ez43LQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8LFfASC7EemyTKt2ez43LQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8LGGECC7EemyTKt2ez43LQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ljLsIH_oEeiGQ_qU31K2fA" memberEnd="_ljLsI3_oEeiGQ_qU31K2fA _ljLsJn_oEeiGQ_qU31K2fA">
@@ -282,7 +286,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUETseEdEeiE9KDw0vtNSg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DUE6wOEdEeiE9KDw0vtNSg" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="rawData" type="_emBecOEcEeiE9KDw0vtNSg" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_VPs30ONXEeiE9KDw0vtNSg" name="RKHEvt"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_b_qvwONXEeiE9KDw0vtNSg" name="EvtGeoStamp">
@@ -343,6 +347,23 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_7gnM8hT6Eem9kZRM4Q4ttg" name="rawData" type="_QQ4PoFd5Eeia3PgQtXbrog" association="_7gPZgBT6Eem9kZRM4Q4ttg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Realization" xmi:id="_KKfccBpWEemiTP14HmAPrg" client="_QQ4PoFd5Eeia3PgQtXbrog" supplier="_O1HAELVOEeiCDrvEUVz2Ug"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_guiO0CCxEemyTKt2ez43LQ" name="RawData">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vlKE0CCxEemyTKt2ez43LQ" name="position" type="_9_QBULW9Eeix7r8U1ZxtVA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1xXvcCCxEemyTKt2ez43LQ" name="data" type="_emBecOEcEeiE9KDw0vtNSg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_i88bkCC7EemyTKt2ez43LQ" name="ioStatus" type="_p8RlwLW-Eeix7r8U1ZxtVA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0Z1TwCC8EemyTKt2ez43LQ" name="batChStatus" type="_po_c0CC7EemyTKt2ez43LQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_po_c0CC7EemyTKt2ez43LQ" name="BatChStatus">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1ovMUCC7EemyTKt2ez43LQ" name="status">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8K7G8CC7EemyTKt2ez43LQ" visibility="private" memberEnd="_8LFfACC7EemyTKt2ez43LQ _8LGGESC7EemyTKt2ez43LQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8K9jMCC7EemyTKt2ez43LQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8K9jMSC7EemyTKt2ez43LQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8LGGESC7EemyTKt2ez43LQ" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_8K7G8CC7EemyTKt2ez43LQ"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Tkn6sFLLEei-ps2IrsePSA" name="Behavior">
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_Hs4wUFLOEei-ps2IrsePSA" name="ModMgr">
@@ -742,7 +763,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="_MAYc8BT5Eem9kZRM4Q4ttg" name="EvtRawData">
         <generalization xmi:type="uml:Generalization" xmi:id="_sI8q4BglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_MAYc8RT5Eem9kZRM4Q4ttg" name="rawData" type="_emBecOEcEeiE9KDw0vtNSg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4o65cCCzEemyTKt2ez43LQ" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_NOf14BT5Eem9kZRM4Q4ttg" name="evRawData" signal="_MAYc8BT5Eem9kZRM4Q4ttg"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_36ONoBXBEem9kZRM4Q4ttg" signal="_0iYskGWgEeiax4a4nV9STA"/>
