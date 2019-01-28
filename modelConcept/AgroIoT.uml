@@ -349,7 +349,7 @@
     <packagedElement xmi:type="uml:Realization" xmi:id="_KKfccBpWEemiTP14HmAPrg" client="_QQ4PoFd5Eeia3PgQtXbrog" supplier="_O1HAELVOEeiCDrvEUVz2Ug"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_guiO0CCxEemyTKt2ez43LQ" name="RawData">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_vlKE0CCxEemyTKt2ez43LQ" name="position" type="_9_QBULW9Eeix7r8U1ZxtVA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_1xXvcCCxEemyTKt2ez43LQ" name="data" type="_emBecOEcEeiE9KDw0vtNSg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1xXvcCCxEemyTKt2ez43LQ" name="devData" visibility="public" type="_emBecOEcEeiE9KDw0vtNSg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i88bkCC7EemyTKt2ez43LQ" name="ioStatus" type="_p8RlwLW-Eeix7r8U1ZxtVA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_0Z1TwCC8EemyTKt2ez43LQ" name="batChStatus" type="_po_c0CC7EemyTKt2ez43LQ"/>
     </packagedElement>
