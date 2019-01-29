@@ -4599,7 +4599,7 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eXOYMSC8EemyTKt2ez43LQ" key="visible" value="true"/>
         </eAnnotations>
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_--974CC7EemyTKt2ez43LQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_8MAsFSC7EemyTKt2ez43LQ" x="-26" y="-61"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8MAsFSC7EemyTKt2ez43LQ" x="-6" y="-61"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_8MAsFiC7EemyTKt2ez43LQ" visible="false" type="Association_SourceMultiplicityLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="__AF9QCC7EemyTKt2ez43LQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
