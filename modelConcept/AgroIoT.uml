@@ -178,15 +178,15 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Ntt1bW9Eeix7r8U1ZxtVA" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_9_QBULW9Eeix7r8U1ZxtVA" name="GeoStamp">
+    <packagedElement xmi:type="uml:Class" xmi:id="_9_QBULW9Eeix7r8U1ZxtVA" name="Geo">
       <generalization xmi:type="uml:Generalization" xmi:id="_g0KxwLW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_p8RlwLW-Eeix7r8U1ZxtVA" name="IOStatus">
       <generalization xmi:type="uml:Generalization" xmi:id="_4cGsYLW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_CTlrwONaEeiE9KDw0vtNSg" name="input">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CTlrwONaEeiE9KDw0vtNSg" name="digIn">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_In2fIONaEeiE9KDw0vtNSg" name="output">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_In2fIONaEeiE9KDw0vtNSg" name="digOut">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
     </packagedElement>
@@ -276,7 +276,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUETseEdEeiE9KDw0vtNSg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DUE6wOEdEeiE9KDw0vtNSg" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="status" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_VPs30ONXEeiE9KDw0vtNSg" name="RKHEvt"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_b_qvwONXEeiE9KDw0vtNSg" name="EvtGeoStamp">
@@ -337,7 +337,7 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_7gnM8hT6Eem9kZRM4Q4ttg" name="rawData" type="_QQ4PoFd5Eeia3PgQtXbrog" association="_7gPZgBT6Eem9kZRM4Q4ttg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Realization" xmi:id="_KKfccBpWEemiTP14HmAPrg" client="_QQ4PoFd5Eeia3PgQtXbrog" supplier="_O1HAELVOEeiCDrvEUVz2Ug"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_guiO0CCxEemyTKt2ez43LQ" name="RawData">
+    <packagedElement xmi:type="uml:Class" xmi:id="_guiO0CCxEemyTKt2ez43LQ" name="GStatus">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_vlKE0CCxEemyTKt2ez43LQ" name="position" type="_9_QBULW9Eeix7r8U1ZxtVA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_1xXvcCCxEemyTKt2ez43LQ" name="devData" visibility="public" type="_emBecOEcEeiE9KDw0vtNSg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i88bkCC7EemyTKt2ez43LQ" name="ioStatus" type="_p8RlwLW-Eeix7r8U1ZxtVA"/>
@@ -751,9 +751,9 @@
           <expr xmi:type="uml:LiteralString" xmi:id="_IDtBchT4Eem9kZRM4Q4ttg" value="SYNC_TIME"/>
         </when>
       </packagedElement>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_MAYc8BT5Eem9kZRM4Q4ttg" name="EvtRawData">
+      <packagedElement xmi:type="uml:Signal" xmi:id="_MAYc8BT5Eem9kZRM4Q4ttg" name="EvtGStatus">
         <generalization xmi:type="uml:Generalization" xmi:id="_sI8q4BglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_4o65cCCzEemyTKt2ez43LQ" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4o65cCCzEemyTKt2ez43LQ" name="status" type="_guiO0CCxEemyTKt2ez43LQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_NOf14BT5Eem9kZRM4Q4ttg" name="evRawData" signal="_MAYc8BT5Eem9kZRM4Q4ttg"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_36ONoBXBEem9kZRM4Q4ttg" signal="_0iYskGWgEeiax4a4nV9STA"/>
