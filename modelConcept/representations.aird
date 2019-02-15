@@ -15,4 +15,5 @@
   <semanticResources>AgroIoT.notation</semanticResources>
   <semanticResources>AgroIoT.uml</semanticResources>
   <semanticResources>AgroIoT_es_ES.properties</semanticResources>
+  <semanticResources>platform:/resource/DIMBA/DIMBA.uml</semanticResources>
 </viewpoint:DAnalysis>
