@@ -759,6 +759,8 @@
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_36ONoBXBEem9kZRM4Q4ttg" signal="_0iYskGWgEeiax4a4nV9STA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_i4ZskBglEemOl_Rcwx2UMg" name="RKHEvt"/>
       <packagedElement xmi:type="uml:Signal" xmi:id="_MsUb8DE_EemwtZvajLIb3w" name="evNetClockSync"/>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_Nkz78DnLEemRu-vBLQr6gA" name="evOper"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_NuNIgDnLEemRu-vBLQr6gA" name="evOper" signal="_Nkz78DnLEemRu-vBLQr6gA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_JhWSAF7LEeiYcaQ4qYJ6pg" name="Sequences">
       <packagedElement xmi:type="uml:Interaction" xmi:id="_6kx0YGXCEeiax4a4nV9STA" name="Interaction1">
@@ -1607,18 +1609,14 @@
             <language>C</language>
             <body>open();</body>
           </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_nhypmDE_EemwtZvajLIb3w">
-            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_KXEO4FLfEei-ps2IrsePSA"/>
-          </trigger>
+          <trigger xmi:type="uml:Trigger" xmi:id="_nhypmDE_EemwtZvajLIb3w" event="_KXEO4FLfEei-ps2IrsePSA"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_nhypmTE_EemwtZvajLIb3w" source="_nhyprTE_EemwtZvajLIb3w" target="_nhyprDE_EemwtZvajLIb3w">
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhypmjE_EemwtZvajLIb3w">
             <language>C</language>
             <body>close();</body>
           </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_nhypmzE_EemwtZvajLIb3w">
-            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_rO3LUFLfEei-ps2IrsePSA"/>
-          </trigger>
+          <trigger xmi:type="uml:Trigger" xmi:id="_nhypmzE_EemwtZvajLIb3w" event="_rO3LUFLfEei-ps2IrsePSA"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_nhypnDE_EemwtZvajLIb3w" source="_nhyprTE_EemwtZvajLIb3w" target="_nhyprDE_EemwtZvajLIb3w"/>
         <transition xmi:type="uml:Transition" xmi:id="_nhypnTE_EemwtZvajLIb3w" kind="internal" source="_nhyprTE_EemwtZvajLIb3w" target="_nhyprTE_EemwtZvajLIb3w">
@@ -1626,101 +1624,73 @@
             <language>C</language>
             <body>sendFail();</body>
           </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_nhypnzE_EemwtZvajLIb3w">
-            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9EpdIGQiEeietdcvou649g"/>
-          </trigger>
+          <trigger xmi:type="uml:Trigger" xmi:id="_nhypnzE_EemwtZvajLIb3w" event="_9EpdIGQiEeietdcvou649g"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_nhypoDE_EemwtZvajLIb3w" kind="internal" source="_nhyprTE_EemwtZvajLIb3w" target="_nhyprTE_EemwtZvajLIb3w">
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhypoTE_EemwtZvajLIb3w">
             <language>C</language>
             <body>recvFail();</body>
           </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_nhypojE_EemwtZvajLIb3w" name="evRecv">
-            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_SnRvYGjJEeiYkNlrzzlm7w"/>
-          </trigger>
+          <trigger xmi:type="uml:Trigger" xmi:id="_nhypojE_EemwtZvajLIb3w" name="evRecv" event="_SnRvYGjJEeiYkNlrzzlm7w"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_nhypozE_EemwtZvajLIb3w" kind="internal" source="_nhyprDE_EemwtZvajLIb3w" target="_nhyprDE_EemwtZvajLIb3w">
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyppDE_EemwtZvajLIb3w">
             <language>C</language>
             <body>recvFail();</body>
           </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_nhyppTE_EemwtZvajLIb3w">
-            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_SnRvYGjJEeiYkNlrzzlm7w"/>
-          </trigger>
+          <trigger xmi:type="uml:Trigger" xmi:id="_nhyppTE_EemwtZvajLIb3w" event="_SnRvYGjJEeiYkNlrzzlm7w"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_nhyppjE_EemwtZvajLIb3w" kind="internal" source="_nhyprDE_EemwtZvajLIb3w" target="_nhyprDE_EemwtZvajLIb3w">
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyppzE_EemwtZvajLIb3w">
             <language>C</language>
             <body>sendFail();</body>
           </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_nhypqDE_EemwtZvajLIb3w">
-            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9EpdIGQiEeietdcvou649g"/>
-          </trigger>
+          <trigger xmi:type="uml:Trigger" xmi:id="_nhypqDE_EemwtZvajLIb3w" event="_9EpdIGQiEeietdcvou649g"/>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_nhypqTE_EemwtZvajLIb3w" kind="internal" source="_nhyprTE_EemwtZvajLIb3w" target="_nhyprTE_EemwtZvajLIb3w">
           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhypqjE_EemwtZvajLIb3w">
             <language>C</language>
             <body>setSigLevel();</body>
           </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_nhypqzE_EemwtZvajLIb3w" name="evSigLevel">
-            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_uls_QHs3Eeiv5IAcNfORYw"/>
-          </trigger>
+          <trigger xmi:type="uml:Trigger" xmi:id="_nhypqzE_EemwtZvajLIb3w" name="evSigLevel" event="_uls_QHs3Eeiv5IAcNfORYw"/>
         </transition>
         <subvertex xmi:type="uml:State" xmi:id="_nhyprDE_EemwtZvajLIb3w" name="inactive"/>
         <subvertex xmi:type="uml:State" xmi:id="_nhyprTE_EemwtZvajLIb3w" name="active">
           <region xmi:type="uml:Region" xmi:id="_nhyprjE_EemwtZvajLIb3w" name="Region1">
             <transition xmi:type="uml:Transition" xmi:id="_nhyprzE_EemwtZvajLIb3w" source="_nhyp9zE_EemwtZvajLIb3w" target="_nhypxDE_EemwtZvajLIb3w"/>
             <transition xmi:type="uml:Transition" xmi:id="_nhypsDE_EemwtZvajLIb3w" source="_nhyp-DE_EemwtZvajLIb3w" target="_nhyqoDE_EemwtZvajLIb3w">
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypsTE_EemwtZvajLIb3w">
-                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_B9uosFiuEeiQLo5rqCRH8w"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypsTE_EemwtZvajLIb3w" event="_B9uosFiuEeiQLo5rqCRH8w"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_nhypsjE_EemwtZvajLIb3w" source="_nhyqoDE_EemwtZvajLIb3w" target="_nhyp-DE_EemwtZvajLIb3w">
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypszE_EemwtZvajLIb3w">
-                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_RxQy4FiuEeiQLo5rqCRH8w"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypszE_EemwtZvajLIb3w" event="_RxQy4FiuEeiQLo5rqCRH8w"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_nhyptDE_EemwtZvajLIb3w" source="_nhypxDE_EemwtZvajLIb3w" target="_nhyqoDE_EemwtZvajLIb3w"/>
             <transition xmi:type="uml:Transition" xmi:id="_nhyptTE_EemwtZvajLIb3w" source="_nhypxDE_EemwtZvajLIb3w" target="_nhyqojE_EemwtZvajLIb3w">
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhyptjE_EemwtZvajLIb3w">
-                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhyptjE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_nhyptzE_EemwtZvajLIb3w" source="_nhyqojE_EemwtZvajLIb3w" target="_nhyprTE_EemwtZvajLIb3w">
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypuDE_EemwtZvajLIb3w" name="FAILURE_TRY_DELAY">
-                <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_lQ7DUGYREeiSsKUmuCYmrw"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypuDE_EemwtZvajLIb3w" name="FAILURE_TRY_DELAY" event="_lQ7DUGYREeiSsKUmuCYmrw"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_nhypuTE_EemwtZvajLIb3w" source="_nhyqoDE_EemwtZvajLIb3w" target="_nhyqojE_EemwtZvajLIb3w">
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypujE_EemwtZvajLIb3w">
-                <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_lHFSoGWUEeivSvTH1LqtnQ"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypujE_EemwtZvajLIb3w" event="_lHFSoGWUEeivSvTH1LqtnQ"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_nhypuzE_EemwtZvajLIb3w" source="_nhyqmjE_EemwtZvajLIb3w" target="_nhyqpDE_EemwtZvajLIb3w">
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypvDE_EemwtZvajLIb3w" name="evDisconnected">
-                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_GkzLoFz6EeildqcvJZY8yg"/>
-              </trigger>
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypvTE_EemwtZvajLIb3w">
-                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypvDE_EemwtZvajLIb3w" name="evDisconnected" event="_GkzLoFz6EeildqcvJZY8yg"/>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypvTE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_nhypvjE_EemwtZvajLIb3w" kind="internal" source="_nhyqoDE_EemwtZvajLIb3w" target="_nhyqoDE_EemwtZvajLIb3w">
               <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhypvzE_EemwtZvajLIb3w">
                 <language>C</language>
                 <body>checkRegStatus();</body>
               </effect>
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypwDE_EemwtZvajLIb3w" name="CHECK_REG_PERIOD">
-                <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_ZGAuEHs4Eeiv5IAcNfORYw"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypwDE_EemwtZvajLIb3w" name="CHECK_REG_PERIOD" event="_ZGAuEHs4Eeiv5IAcNfORYw"/>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_nhypwTE_EemwtZvajLIb3w" kind="internal" source="_nhyqoDE_EemwtZvajLIb3w" target="_nhyqoDE_EemwtZvajLIb3w">
               <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhypwjE_EemwtZvajLIb3w">
                 <language>C</language>
                 <body>startRegStatus();</body>
               </effect>
-              <trigger xmi:type="uml:Trigger" xmi:id="_nhypwzE_EemwtZvajLIb3w">
-                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_B9uosFiuEeiQLo5rqCRH8w"/>
-              </trigger>
+              <trigger xmi:type="uml:Trigger" xmi:id="_nhypwzE_EemwtZvajLIb3w" event="_B9uosFiuEeiQLo5rqCRH8w"/>
             </transition>
             <subvertex xmi:type="uml:State" xmi:id="_nhypxDE_EemwtZvajLIb3w" name="initialize">
               <region xmi:type="uml:Region" xmi:id="_nhypxTE_EemwtZvajLIb3w" name="Region1">
@@ -1731,14 +1701,10 @@
                   </effect>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhypyDE_EemwtZvajLIb3w" source="_nhyp5TE_EemwtZvajLIb3w" target="_nhyp6zE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhypyTE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhypyTE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhypyjE_EemwtZvajLIb3w" source="_nhyp5TE_EemwtZvajLIb3w" target="_nhyp6DE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhypyzE_EemwtZvajLIb3w" name="evNoResponse">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhypyzE_EemwtZvajLIb3w" name="evNoResponse" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhypzDE_EemwtZvajLIb3w" guard="_nhypzTE_EemwtZvajLIb3w" source="_nhyp6DE_EemwtZvajLIb3w" target="_nhyp5TE_EemwtZvajLIb3w">
                   <ownedRule xmi:type="uml:Constraint" xmi:id="_nhypzTE_EemwtZvajLIb3w" name="MAX_SYNC_RETRY">
@@ -1753,24 +1719,16 @@
                     <language>C</language>
                     <body>setPin();</body>
                   </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp0TE_EemwtZvajLIb3w" name="evSimPin">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_1d8ZIFirEeiQLo5rqCRH8w"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp0TE_EemwtZvajLIb3w" name="evSimPin" event="_1d8ZIFirEeiQLo5rqCRH8w"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp0jE_EemwtZvajLIb3w" source="_nhyp6zE_EemwtZvajLIb3w" target="_nhyp6TE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp0zE_EemwtZvajLIb3w" name="evOk">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp0zE_EemwtZvajLIb3w" name="evOk" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp1DE_EemwtZvajLIb3w" source="_nhyp7TE_EemwtZvajLIb3w" target="_nhyp6TE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp1TE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp1TE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp1jE_EemwtZvajLIb3w" source="_nhyp6TE_EemwtZvajLIb3w" target="_nhyp8TE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp1zE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_gqE2sFitEeiQLo5rqCRH8w"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp1zE_EemwtZvajLIb3w" event="_gqE2sFitEeiQLo5rqCRH8w"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp2DE_EemwtZvajLIb3w" guard="_nhyp2TE_EemwtZvajLIb3w" source="_nhyp6DE_EemwtZvajLIb3w" target="_nhyqojE_EemwtZvajLIb3w">
                   <ownedRule xmi:type="uml:Constraint" xmi:id="_nhyp2TE_EemwtZvajLIb3w" name="else">
@@ -1781,29 +1739,19 @@
                   </ownedRule>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp2zE_EemwtZvajLIb3w" source="_nhyp6TE_EemwtZvajLIb3w" target="_nhyqojE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp3DE_EemwtZvajLIb3w" name="evSimError">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_DbUvcFirEeiQLo5rqCRH8w"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp3DE_EemwtZvajLIb3w" name="evSimError" event="_DbUvcFirEeiQLo5rqCRH8w"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp3TE_EemwtZvajLIb3w" source="_nhyp7zE_EemwtZvajLIb3w" target="_nhyp7jE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp3jE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp3jE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp3zE_EemwtZvajLIb3w" source="_nhyp8TE_EemwtZvajLIb3w" target="_nhyp9TE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp4DE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp4DE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp4TE_EemwtZvajLIb3w" source="_nhyp8zE_EemwtZvajLIb3w" target="_nhyp7zE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp4jE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp4jE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp4zE_EemwtZvajLIb3w" source="_nhyp9TE_EemwtZvajLIb3w" target="_nhyp8zE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp5DE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_suD5IHovEei4PsOC5dvXOg"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp5DE_EemwtZvajLIb3w" event="_suD5IHovEei4PsOC5dvXOg"/>
                 </transition>
                 <subvertex xmi:type="uml:State" xmi:id="_nhyp5TE_EemwtZvajLIb3w" name="sync">
                   <entry xmi:type="uml:OpaqueBehavior" xmi:id="_nhyp5jE_EemwtZvajLIb3w">
@@ -1864,9 +1812,7 @@
                   </effect>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp_TE_EemwtZvajLIb3w" source="_nhyqeTE_EemwtZvajLIb3w" target="_nhyqmTE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp_jE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyp_jE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyp_zE_EemwtZvajLIb3w" guard="_nhyqADE_EemwtZvajLIb3w" source="_nhyqmTE_EemwtZvajLIb3w" target="_nhyqmDE_EemwtZvajLIb3w">
                   <ownedRule xmi:type="uml:Constraint" xmi:id="_nhyqADE_EemwtZvajLIb3w">
@@ -1881,9 +1827,7 @@
                     <language>C</language>
                     <body>configTry();</body>
                   </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqBDE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_r72OoGUeEeiPR9LHmvLjHw"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqBDE_EemwtZvajLIb3w" event="_r72OoGUeEeiPR9LHmvLjHw"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyqBTE_EemwtZvajLIb3w" guard="_nhyqBjE_EemwtZvajLIb3w" source="_nhyqmTE_EemwtZvajLIb3w" target="_nhyqojE_EemwtZvajLIb3w">
                   <ownedRule xmi:type="uml:Constraint" xmi:id="_nhyqBjE_EemwtZvajLIb3w">
@@ -1898,23 +1842,13 @@
                     <language>C</language>
                     <body>connectTry();</body>
                   </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqCjE_EemwtZvajLIb3w" name="CONNECT_TRY_DELAY">
-                    <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_x7tfcGYHEeiSsKUmuCYmrw"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqCjE_EemwtZvajLIb3w" name="CONNECT_TRY_DELAY" event="_x7tfcGYHEeiSsKUmuCYmrw"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyqCzE_EemwtZvajLIb3w" source="_nhyqJDE_EemwtZvajLIb3w" target="_nhyqnTE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDDE_EemwtZvajLIb3w" name="evNoResponse">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                  </trigger>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDTE_EemwtZvajLIb3w" name="evClosed">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_W1lmUGW9EeivSvTH1LqtnQ"/>
-                  </trigger>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDjE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_DXAPYFz5EeildqcvJZY8yg"/>
-                  </trigger>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDzE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_H0brYFl0EeioMqgkRul4rQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDDE_EemwtZvajLIb3w" name="evNoResponse" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDTE_EemwtZvajLIb3w" name="evClosed" event="_W1lmUGW9EeivSvTH1LqtnQ"/>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDjE_EemwtZvajLIb3w" event="_DXAPYFz5EeildqcvJZY8yg"/>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqDzE_EemwtZvajLIb3w" event="_H0brYFl0EeioMqgkRul4rQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyqEDE_EemwtZvajLIb3w" guard="_nhyqETE_EemwtZvajLIb3w" source="_nhyqnTE_EemwtZvajLIb3w" target="_nhyqmzE_EemwtZvajLIb3w">
                   <ownedRule xmi:type="uml:Constraint" xmi:id="_nhyqETE_EemwtZvajLIb3w">
@@ -1937,60 +1871,40 @@
                     <language>C</language>
                     <body>rtimeSync();</body>
                   </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqGDE_EemwtZvajLIb3w" name="evLocalTime">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_c3jrsG7EEeizZc1aGKRLzQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqGDE_EemwtZvajLIb3w" name="evLocalTime" event="_c3jrsG7EEeizZc1aGKRLzQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyqGTE_EemwtZvajLIb3w" source="_nhyqnjE_EemwtZvajLIb3w" target="_nhyqnzE_EemwtZvajLIb3w">
                   <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqGjE_EemwtZvajLIb3w">
                     <language>C</language>
                     <body>localTimeGet();</body>
                   </effect>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqGzE_EemwtZvajLIb3w" name="evNetClockSync">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_Ch1VIG7EEeizZc1aGKRLzQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqGzE_EemwtZvajLIb3w" name="evNetClockSync" event="_Ch1VIG7EEeizZc1aGKRLzQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyqHDE_EemwtZvajLIb3w" source="_nhyqnjE_EemwtZvajLIb3w" target="_nhyqeTE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqHTE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_Oh4moG7EEeizZc1aGKRLzQ"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqHTE_EemwtZvajLIb3w" event="_Oh4moG7EEeizZc1aGKRLzQ"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyqHjE_EemwtZvajLIb3w" source="_nhyqnzE_EemwtZvajLIb3w" target="_nhyqeTE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqHzE_EemwtZvajLIb3w">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqHzE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                 </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_nhyqIDE_EemwtZvajLIb3w" source="_nhyqJDE_EemwtZvajLIb3w" target="_nhyqeTE_EemwtZvajLIb3w">
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqITE_EemwtZvajLIb3w" name="evIPStart">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_R8vWIFmKEeiFFviyqWdp8w"/>
-                  </trigger>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqIjE_EemwtZvajLIb3w" name="evIPGprsAct">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_0RVLwFq-EeiA69UjQR0RyA"/>
-                  </trigger>
-                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqIzE_EemwtZvajLIb3w" name="evIPInitial">
-                    <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_oe9w8Fq-EeiA69UjQR0RyA"/>
-                  </trigger>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqITE_EemwtZvajLIb3w" name="evIPStart" event="_R8vWIFmKEeiFFviyqWdp8w"/>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqIjE_EemwtZvajLIb3w" name="evIPGprsAct" event="_0RVLwFq-EeiA69UjQR0RyA"/>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_nhyqIzE_EemwtZvajLIb3w" name="evIPInitial" event="_oe9w8Fq-EeiA69UjQR0RyA"/>
                 </transition>
                 <subvertex xmi:type="uml:State" xmi:id="_nhyqJDE_EemwtZvajLIb3w" name="connecting">
                   <region xmi:type="uml:Region" xmi:id="_nhyqJTE_EemwtZvajLIb3w" name="Region1">
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqJjE_EemwtZvajLIb3w" source="_nhyqdjE_EemwtZvajLIb3w" target="_nhyqPDE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqJzE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_dWhcYFmLEeiFFviyqWdp8w"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqJzE_EemwtZvajLIb3w" event="_dWhcYFmLEeiFFviyqWdp8w"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqKDE_EemwtZvajLIb3w" source="_nhyqPDE_EemwtZvajLIb3w" target="_nhyqJDE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqKTE_EemwtZvajLIb3w" name="evClosed">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_W1lmUGW9EeivSvTH1LqtnQ"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqKTE_EemwtZvajLIb3w" name="evClosed" event="_W1lmUGW9EeivSvTH1LqtnQ"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqKjE_EemwtZvajLIb3w" source="_nhyqJDE_EemwtZvajLIb3w" target="_nhyqmjE_EemwtZvajLIb3w">
                       <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqKzE_EemwtZvajLIb3w">
                         <language>C</language>
                         <body>socketClose();</body>
                       </effect>
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqLDE_EemwtZvajLIb3w" name="evClose">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_rO3LUFLfEei-ps2IrsePSA"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqLDE_EemwtZvajLIb3w" name="evClose" event="_rO3LUFLfEei-ps2IrsePSA"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqLTE_EemwtZvajLIb3w" source="_nhyqOzE_EemwtZvajLIb3w" target="_nhyqdjE_EemwtZvajLIb3w">
                       <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqLjE_EemwtZvajLIb3w">
@@ -2004,31 +1918,21 @@
                         <language>C</language>
                         <body>getConnStatus()</body>
                       </effect>
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqMjE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_IwVd4GX0EeiSsKUmuCYmrw"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqMjE_EemwtZvajLIb3w" event="_IwVd4GX0EeiSsKUmuCYmrw"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqMzE_EemwtZvajLIb3w" source="_nhyqPDE_EemwtZvajLIb3w" target="_nhyqdzE_EemwtZvajLIb3w">
                       <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqNDE_EemwtZvajLIb3w">
                         <language>C</language>
                         <body>socketClose()</body>
                       </effect>
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqNTE_EemwtZvajLIb3w" name="evRestart">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_Y9bKwHowEei4PsOC5dvXOg"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqNTE_EemwtZvajLIb3w" name="evRestart" event="_Y9bKwHowEei4PsOC5dvXOg"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqNjE_EemwtZvajLIb3w" source="_nhyqdzE_EemwtZvajLIb3w" target="_nhyqeDE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqNzE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_GkzLoFz6EeildqcvJZY8yg"/>
-                      </trigger>
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqODE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqNzE_EemwtZvajLIb3w" event="_GkzLoFz6EeildqcvJZY8yg"/>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqODE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqOTE_EemwtZvajLIb3w" source="_nhyqeDE_EemwtZvajLIb3w" target="_nhyqJDE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqOjE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#__9cpsHowEei4PsOC5dvXOg"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqOjE_EemwtZvajLIb3w" event="__9cpsHowEei4PsOC5dvXOg"/>
                     </transition>
                     <subvertex xmi:type="uml:Pseudostate" xmi:id="_nhyqOzE_EemwtZvajLIb3w" name=""/>
                     <subvertex xmi:type="uml:State" xmi:id="_nhyqPDE_EemwtZvajLIb3w" name="connected">
@@ -2046,18 +1950,14 @@
                             <language>C</language>
                             <body>readData();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqQjE_EemwtZvajLIb3w" name="evRecv">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_SnRvYGjJEeiYkNlrzzlm7w"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqQjE_EemwtZvajLIb3w" name="evRecv" event="_SnRvYGjJEeiYkNlrzzlm7w"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqQzE_EemwtZvajLIb3w" source="_nhyqczE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w">
                           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqRDE_EemwtZvajLIb3w">
                             <language>C</language>
                             <body>recvOk();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqRTE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqRTE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqRjE_EemwtZvajLIb3w" source="_nhyqdDE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w"/>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqRzE_EemwtZvajLIb3w" source="_nhyqZTE_EemwtZvajLIb3w" target="_nhyqZjE_EemwtZvajLIb3w">
@@ -2065,18 +1965,14 @@
                             <language>C</language>
                             <body>sendRequest();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqSTE_EemwtZvajLIb3w" name="evSend">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9EpdIGQiEeietdcvou649g"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqSTE_EemwtZvajLIb3w" name="evSend" event="_9EpdIGQiEeietdcvou649g"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqSjE_EemwtZvajLIb3w" source="_nhyqZTE_EemwtZvajLIb3w" target="_nhyqdTE_EemwtZvajLIb3w">
                           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqSzE_EemwtZvajLIb3w">
                             <language>C</language>
                             <body>getConnStatus();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqTDE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:TimeEvent" href="../DIMBA/DIMBA.uml#_IwVd4GX0EeiSsKUmuCYmrw"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqTDE_EemwtZvajLIb3w" event="_IwVd4GX0EeiSsKUmuCYmrw"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqTTE_EemwtZvajLIb3w" source="_nhyqZjE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w"/>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqTjE_EemwtZvajLIb3w" source="_nhyqZjE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w">
@@ -2084,54 +1980,38 @@
                             <language>C</language>
                             <body>sendFail();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqUDE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                          </trigger>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqUTE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_H0brYFl0EeioMqgkRul4rQ"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqUDE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqUTE_EemwtZvajLIb3w" event="_H0brYFl0EeioMqgkRul4rQ"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqUjE_EemwtZvajLIb3w" source="_nhyqczE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w">
                           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqUzE_EemwtZvajLIb3w">
                             <language>C</language>
                             <body>recvFail();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqVDE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                          </trigger>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqVTE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_H0brYFl0EeioMqgkRul4rQ"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqVDE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqVTE_EemwtZvajLIb3w" event="_H0brYFl0EeioMqgkRul4rQ"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqVjE_EemwtZvajLIb3w" kind="internal" source="_nhyqZTE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w">
                           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqVzE_EemwtZvajLIb3w">
                             <language>C</language>
                             <body>resetParser();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqWDE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqWDE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqWTE_EemwtZvajLIb3w" kind="internal" source="_nhyqdTE_EemwtZvajLIb3w" target="_nhyqdTE_EemwtZvajLIb3w">
                           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqWjE_EemwtZvajLIb3w">
                             <language>C</language>
                             <body>defer();</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqWzE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9EpdIGQiEeietdcvou649g"/>
-                          </trigger>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqXDE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_SnRvYGjJEeiYkNlrzzlm7w"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqWzE_EemwtZvajLIb3w" event="_9EpdIGQiEeietdcvou649g"/>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqXDE_EemwtZvajLIb3w" event="_SnRvYGjJEeiYkNlrzzlm7w"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqXTE_EemwtZvajLIb3w" source="_nhyqdTE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w">
                           <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqXjE_EemwtZvajLIb3w">
                             <language>C</language>
                             <body>retryCount=0;</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqXzE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_dWhcYFmLEeiFFviyqWdp8w"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqXzE_EemwtZvajLIb3w" event="_dWhcYFmLEeiFFviyqWdp8w"/>
                         </transition>
                         <transition xmi:type="uml:Transition" xmi:id="_nhyqYDE_EemwtZvajLIb3w" guard="_nhyqYTE_EemwtZvajLIb3w" source="_nhyqdTE_EemwtZvajLIb3w" target="_nhyqZTE_EemwtZvajLIb3w">
                           <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_nhyqYTE_EemwtZvajLIb3w" name="retryCount &lt; MAX_CONSTATUS_NORESP">
@@ -2141,9 +2021,7 @@
                             <language>C</language>
                             <body>++retryCounter;</body>
                           </effect>
-                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqZDE_EemwtZvajLIb3w">
-                            <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_9rJ44FiwEeiQLo5rqCRH8w"/>
-                          </trigger>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_nhyqZDE_EemwtZvajLIb3w" event="_9rJ44FiwEeiQLo5rqCRH8w"/>
                         </transition>
                         <subvertex xmi:type="uml:State" xmi:id="_nhyqZTE_EemwtZvajLIb3w" name="idle"/>
                         <subvertex xmi:type="uml:State" xmi:id="_nhyqZjE_EemwtZvajLIb3w" name="sending">
@@ -2153,18 +2031,14 @@
                                 <language>C</language>
                                 <body>flushData();</body>
                               </effect>
-                              <trigger xmi:type="uml:Trigger" xmi:id="_nhyqajE_EemwtZvajLIb3w">
-                                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                              </trigger>
+                              <trigger xmi:type="uml:Trigger" xmi:id="_nhyqajE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                             </transition>
                             <transition xmi:type="uml:Transition" xmi:id="_nhyqazE_EemwtZvajLIb3w" source="_nhyqcDE_EemwtZvajLIb3w" target="_nhyqcTE_EemwtZvajLIb3w">
                               <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqbDE_EemwtZvajLIb3w">
                                 <language>C</language>
                                 <body>sendOk();</body>
                               </effect>
-                              <trigger xmi:type="uml:Trigger" xmi:id="_nhyqbTE_EemwtZvajLIb3w">
-                                <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                              </trigger>
+                              <trigger xmi:type="uml:Trigger" xmi:id="_nhyqbTE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                             </transition>
                             <transition xmi:type="uml:Transition" xmi:id="_nhyqbjE_EemwtZvajLIb3w" source="_nhyqcjE_EemwtZvajLIb3w" target="_nhyqbzE_EemwtZvajLIb3w"/>
                             <subvertex xmi:type="uml:State" xmi:id="_nhyqbzE_EemwtZvajLIb3w" name="waitPrompt"/>
@@ -2192,44 +2066,28 @@
                       </effect>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqfTE_EemwtZvajLIb3w" source="_nhyqjDE_EemwtZvajLIb3w" target="_nhyqkTE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqfjE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqfjE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqfzE_EemwtZvajLIb3w" source="_nhyqkTE_EemwtZvajLIb3w" target="_nhyqjzE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqgDE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_cCsw8FlzEeioMqgkRul4rQ"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqgDE_EemwtZvajLIb3w" event="_cCsw8FlzEeioMqgkRul4rQ"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqgTE_EemwtZvajLIb3w" source="_nhyqjzE_EemwtZvajLIb3w" target="_nhyqjzE_EemwtZvajLIb3w">
                       <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqgjE_EemwtZvajLIb3w">
                         <language>C</language>
                         <body>requestIP();</body>
                       </effect>
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqgzE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_0RVLwFq-EeiA69UjQR0RyA"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqgzE_EemwtZvajLIb3w" event="_0RVLwFq-EeiA69UjQR0RyA"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqhDE_EemwtZvajLIb3w" source="_nhyqjzE_EemwtZvajLIb3w" target="_nhyqkzE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqhTE_EemwtZvajLIb3w" name="evIPStatus">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_DXAPYFz5EeildqcvJZY8yg"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqhTE_EemwtZvajLIb3w" name="evIPStatus" event="_DXAPYFz5EeildqcvJZY8yg"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqhjE_EemwtZvajLIb3w" source="_nhyqjzE_EemwtZvajLIb3w" target="_nhyqjzE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqhzE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_oe9w8Fq-EeiA69UjQR0RyA"/>
-                      </trigger>
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqiDE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_R8vWIFmKEeiFFviyqWdp8w"/>
-                      </trigger>
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqiTE_EemwtZvajLIb3w">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#__GkhgHovEei4PsOC5dvXOg"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqhzE_EemwtZvajLIb3w" event="_oe9w8Fq-EeiA69UjQR0RyA"/>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqiDE_EemwtZvajLIb3w" event="_R8vWIFmKEeiFFviyqWdp8w"/>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqiTE_EemwtZvajLIb3w" event="__GkhgHovEei4PsOC5dvXOg"/>
                     </transition>
                     <transition xmi:type="uml:Transition" xmi:id="_nhyqijE_EemwtZvajLIb3w" source="_nhyqlTE_EemwtZvajLIb3w" target="_nhyqjDE_EemwtZvajLIb3w">
-                      <trigger xmi:type="uml:Trigger" xmi:id="_nhyqizE_EemwtZvajLIb3w" name="evOper">
-                        <event xmi:type="uml:SignalEvent" href="../DIMBA/DIMBA.uml#_4xJ6AIXUEeirvZHRzeSlwg"/>
-                      </trigger>
+                      <trigger xmi:type="uml:Trigger" xmi:id="_OGMKsDnLEemRu-vBLQr6gA" name="evOper" event="_NuNIgDnLEemRu-vBLQr6gA"/>
                     </transition>
                     <subvertex xmi:type="uml:State" xmi:id="_nhyqjDE_EemwtZvajLIb3w" name="setAPN">
                       <entry xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqjTE_EemwtZvajLIb3w">
@@ -2241,7 +2099,7 @@
                     <subvertex xmi:type="uml:State" xmi:id="_nhyqjzE_EemwtZvajLIb3w" name="checkIP">
                       <entry xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqkDE_EemwtZvajLIb3w">
                         <language>C</language>
-                        <body>getConnStatus();</body>
+                        <body>getIpStatus();</body>
                       </entry>
                     </subvertex>
                     <subvertex xmi:type="uml:State" xmi:id="_nhyqkTE_EemwtZvajLIb3w" name="enableGPRS">
