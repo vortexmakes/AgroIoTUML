@@ -2140,9 +2140,13 @@
               </entry>
             </subvertex>
             <subvertex xmi:type="uml:State" xmi:id="_nhyqojE_EemwtZvajLIb3w" name="failure">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_H6lZYDtSEemNXtI4NcdpXQ">
+                <language>C</language>
+                <body>failureEntry();</body>
+              </entry>
               <exit xmi:type="uml:OpaqueBehavior" xmi:id="_nhyqozE_EemwtZvajLIb3w">
                 <language>C</language>
-                <body>ModCmd_init();</body>
+                <body>failureExit();</body>
               </exit>
             </subvertex>
             <subvertex xmi:type="uml:FinalState" xmi:id="_nhyqpDE_EemwtZvajLIb3w" name=""/>
