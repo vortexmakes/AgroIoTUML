@@ -30,7 +30,7 @@
     <packagedElement xmi:type="uml:Realization" xmi:id="_vhtLEFd1Eeia3PgQtXbrog" client="__5Dw0FdxEeia3PgQtXbrog" supplier="_Rf1_gFLLEei-ps2IrsePSA"/>
     <packagedElement xmi:type="uml:Realization" xmi:id="_0CPXAFd1Eeia3PgQtXbrog" client="_A5sHYFdyEeia3PgQtXbrog" supplier="_u3OAcFdxEeia3PgQtXbrog"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_QQ4PoFd5Eeia3PgQtXbrog" name="CommMgr" isActive="true">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_7gml4BT6Eem9kZRM4Q4ttg" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_7gPZgBT6Eem9kZRM4Q4ttg">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7gml4BT6Eem9kZRM4Q4ttg" name="currStatus" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_7gPZgBT6Eem9kZRM4Q4ttg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gnM8BT6Eem9kZRM4Q4ttg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gnM8RT6Eem9kZRM4Q4ttg" value="1"/>
       </ownedAttribute>
@@ -77,10 +77,6 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_r967ln-TEeiGQ_qU31K2fA" name="date" type="_jDbFwH-TEeiGQ_qU31K2fA" association="_r967kH-TEeiGQ_qU31K2fA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_eX7mYH_oEeiGQ_qU31K2fA" name="Collector" isActive="true">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ljLsI3_oEeiGQ_qU31K2fA" name="gpsMod" type="_1hZZcFdxEeia3PgQtXbrog" association="_ljLsIH_oEeiGQ_qU31K2fA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ljLsJH_oEeiGQ_qU31K2fA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ljLsJX_oEeiGQ_qU31K2fA" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_jlHl0pl3Eeii_JvRFExniQ" name="backupFrame" type="_Ke0RcH_pEeiGQ_qU31K2fA" association="_jlFwoJl3Eeii_JvRFExniQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jlIM4Jl3Eeii_JvRFExniQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jlIz8Jl3Eeii_JvRFExniQ" value="1"/>
@@ -89,12 +85,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8LFfASC7EemyTKt2ez43LQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8LGGECC7EemyTKt2ez43LQ" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ljLsIH_oEeiGQ_qU31K2fA" memberEnd="_ljLsI3_oEeiGQ_qU31K2fA _ljLsJn_oEeiGQ_qU31K2fA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ljLsIX_oEeiGQ_qU31K2fA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ljLsIn_oEeiGQ_qU31K2fA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ljLsJn_oEeiGQ_qU31K2fA" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_ljLsIH_oEeiGQ_qU31K2fA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_5S9CYH_oEeiGQ_qU31K2fA" name="DeviceServer" isActive="true">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ab90EOgHEei_rN11x4-KBA" name="dev" type="_-oP8cLepEeiIpI7hu9VsYg" association="_abq5IOgHEei_rN11x4-KBA">
@@ -188,15 +178,15 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Ntt1bW9Eeix7r8U1ZxtVA" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_9_QBULW9Eeix7r8U1ZxtVA" name="GeoStamp">
+    <packagedElement xmi:type="uml:Class" xmi:id="_9_QBULW9Eeix7r8U1ZxtVA" name="Geo">
       <generalization xmi:type="uml:Generalization" xmi:id="_g0KxwLW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_p8RlwLW-Eeix7r8U1ZxtVA" name="IOStatus">
       <generalization xmi:type="uml:Generalization" xmi:id="_4cGsYLW-Eeix7r8U1ZxtVA" general="_WpqiELW9Eeix7r8U1ZxtVA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_CTlrwONaEeiE9KDw0vtNSg" name="input">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CTlrwONaEeiE9KDw0vtNSg" name="digIn">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_In2fIONaEeiE9KDw0vtNSg" name="output">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_In2fIONaEeiE9KDw0vtNSg" name="digOut">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
     </packagedElement>
@@ -286,7 +276,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUETseEdEeiE9KDw0vtNSg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DUE6wOEdEeiE9KDw0vtNSg" name="collector" type="_eX7mYH_oEeiGQ_qU31K2fA" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DUFh0OEdEeiE9KDw0vtNSg" name="status" type="_guiO0CCxEemyTKt2ez43LQ" aggregation="composite" association="_DUDsoOEdEeiE9KDw0vtNSg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_VPs30ONXEeiE9KDw0vtNSg" name="RKHEvt"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_b_qvwONXEeiE9KDw0vtNSg" name="EvtGeoStamp">
@@ -347,7 +337,7 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_7gnM8hT6Eem9kZRM4Q4ttg" name="rawData" type="_QQ4PoFd5Eeia3PgQtXbrog" association="_7gPZgBT6Eem9kZRM4Q4ttg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Realization" xmi:id="_KKfccBpWEemiTP14HmAPrg" client="_QQ4PoFd5Eeia3PgQtXbrog" supplier="_O1HAELVOEeiCDrvEUVz2Ug"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_guiO0CCxEemyTKt2ez43LQ" name="RawData">
+    <packagedElement xmi:type="uml:Class" xmi:id="_guiO0CCxEemyTKt2ez43LQ" name="GStatus">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_vlKE0CCxEemyTKt2ez43LQ" name="position" type="_9_QBULW9Eeix7r8U1ZxtVA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_1xXvcCCxEemyTKt2ez43LQ" name="devData" visibility="public" type="_emBecOEcEeiE9KDw0vtNSg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i88bkCC7EemyTKt2ez43LQ" name="ioStatus" type="_p8RlwLW-Eeix7r8U1ZxtVA"/>
@@ -761,9 +751,9 @@
           <expr xmi:type="uml:LiteralString" xmi:id="_IDtBchT4Eem9kZRM4Q4ttg" value="SYNC_TIME"/>
         </when>
       </packagedElement>
-      <packagedElement xmi:type="uml:Signal" xmi:id="_MAYc8BT5Eem9kZRM4Q4ttg" name="EvtRawData">
+      <packagedElement xmi:type="uml:Signal" xmi:id="_MAYc8BT5Eem9kZRM4Q4ttg" name="EvtGStatus">
         <generalization xmi:type="uml:Generalization" xmi:id="_sI8q4BglEemOl_Rcwx2UMg" general="_i4ZskBglEemOl_Rcwx2UMg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_4o65cCCzEemyTKt2ez43LQ" name="rawData" type="_guiO0CCxEemyTKt2ez43LQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4o65cCCzEemyTKt2ez43LQ" name="status" type="_guiO0CCxEemyTKt2ez43LQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_NOf14BT5Eem9kZRM4Q4ttg" name="evRawData" signal="_MAYc8BT5Eem9kZRM4Q4ttg"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_36ONoBXBEem9kZRM4Q4ttg" signal="_0iYskGWgEeiax4a4nV9STA"/>
